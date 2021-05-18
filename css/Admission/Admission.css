@@ -1,0 +1,222 @@
+/* navbar start */
+.navbar-toggle,.navbar-default:focus,
+.navbar-toggle,.navbar-default:hover{
+  background-color: transparent;
+}
+#pagelink{
+  background-color: black;
+  padding: 1% 0;
+  border-color: transparent;
+  margin-bottom: 0;
+  
+}
+
+
+#pagelink ul li{
+
+
+  color: white;
+  z-index: 1;
+
+}
+
+#pagelink li a{
+  color: white;
+  font-size: 20px;
+}
+#pagelink li:hover a{
+  color: orange;
+  border-bottom: 2px solid orange;
+  background-color: transparent;
+}
+#active{
+  color: orange !important;;
+  border-bottom: 2px solid orange;
+}
+.menu{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+@media screen and (Max-Width:  1425px) {
+  .logo{
+    width: 100%;
+  }
+  #pagelink{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .menu{
+    width: 100%;
+  }
+}
+@media screen and (Max-Width:  1165px) {
+
+  #pagelink li a{
+    font-size: 15px;
+  }
+}
+@media screen and (Max-Width:  992px) {
+
+  #pagelink{
+    display: block;
+    justify-content: none;
+
+  }
+  #pagelink li a{
+      font-size: 11px;
+    }
+    #pagelink ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .menu{
+      justify-content: center;
+    }
+
+}
+@media screen and (Max-Width:  842px) {
+  #pagelink li a{
+    font-size: 5px;
+  }
+  #pagelink li{
+    width: 150px;
+  }
+}
+@media screen and (Max-Width:  767px) {
+  .menu{
+    display: block;
+  }
+}
+
+
+/* navbar end */
+
+
+body{
+    background-image: url(/img/Admission/213852281_waifu2x_photo_noise3_scale_tta_1.png);
+    background-size: 100% 100%;
+}
+.Application{
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+    background-color: rgba(250, 250, 210, 0.63);
+}
+.title{
+    font-size: 60px;
+}
+.btn{
+    margin-top: 2%;
+    text-align: center;
+    border: 2px solid black;
+    color: black;
+    background-color: rgba(176, 196, 222, 0.753);
+    box-shadow: 0px 0px 5px black;
+}
+.btn:hover{
+    color: white;
+    box-shadow: 0px 0px 10px black;
+}
+.btn p{
+    margin: 0;
+    font-size: 30px;
+}
+.Deadlines{
+    width: 100%;
+    padding: 5% 15%;
+    background-color: rgba(250, 190, 166, 0.616);
+}
+.text{
+    font-size: 30px;
+}
+
+@media screen and (Max-Width:  600px) {
+    .title{
+        font-size: 40px;
+    }
+    .text{
+        font-size: 20px;
+    }
+    .btn p{
+        font-size: 20px;
+    }
+  }
+  @media screen and (Max-Width:  400px) {
+    .title{
+        font-size: 28px;
+    }
+    .text{
+        font-size: 12px;
+    }
+    .btn p{
+        font-size: 12px;
+    }
+  }
+/* footer start */
+.footers{
+    padding: 2% 0;
+    background-color: black;
+    color: white;
+  }
+  .footerbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .ciclebox{
+    margin-top: 10%;
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .cicle{
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 99%;
+  }
+  .connection{
+    margin-left: 5%;
+  }
+  .ftitle{
+    font-size: 20px;
+  }
+  .footerlinkbox{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footerlink ul{
+   
+    list-style: none;
+  }
+  .footerlink li{
+    margin-bottom: 8%;
+  }
+  .footerlink a{
+    font-size: 15px;
+    color: white;
+  }
+  .footerlink a:hover{
+    color: orange;
+  }
+  .yt{
+    background-image: url(/img/index/yt.png);
+    background-size: 100% 100%;
+  }
+  .fb{
+    background-image: url(/img/index/fb.png);
+    background-size: 100% 100%;
+  }
+  .ig{
+    background-image: url(/img/index/IG.png);
+    background-size: 100% 100%;
+  }
+  .line{
+    background-image: url(/img/index/line.png);
+    background-size: 100% 100%;
+  }
+  /* footer end */
