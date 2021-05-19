@@ -7,52 +7,70 @@
     <title>Document</title>
 
      <!-- bootstrap -->
-     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+		integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/css/Admission/Admission.css">
+    <link rel="stylesheet" href="/css/responsive.css">
 
 </head>
 <body>
-    <!-- navbar start -->
- <nav class="navbar navbar-default " role="navigation" id="pagelink">
-    <div class="container-fluid"> 
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse"
-          data-target="#example-navbar-collapse">
-        <span class="sr-only"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="logo" href="#home"><img src="/img/index/chu_logo.png" alt=""></a>
-    </div>
-    <div class="collapse navbar-collapse" id="example-navbar-collapse">
-      <ul class="nav   menu">
-             
-        <li><a  href="/index.html">Home</a></li>
-        
-        <li><a href="/AboutCOM.html">About&nbsp;COM</a></li>
-  
-        <li><a href="/Academics.html">Academics</a></li>
-  
-        <li><a href="/AACSBAccreditation.html">AACSB&nbsp;Accreditation</a></li>
-  
-        <li><a id="active" href="#">Admission</a></li>
-  
-        <li><a href="/InternationalCOM.html">International&nbsp;COM</a></li>
-  
-        <li><a href="/LifeinCOM.html">Life&nbsp;in&nbsp;COM</a></li>
-  
-        <li><a href="/New&Event.html">News&nbsp;&&nbsp;Event</a></li>
-      </ul>
-    </div>
-    </div>
-  </nav>
-  
-   <!-- navbar end -->
-  
+    <!--================Header Menu Area =================-->
+    <header class="header_area">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container box_1620">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png"
+                            style="width: 50px; height: 50px;" alt="">利銓玻璃</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">首頁</a></li>
+                            <li class="nav-item"><a class="nav-link" href="concept.html">理念</a></li>
+                            <li class="nav-item"><a class="nav-link" href="news.html">最新消息</a>
+                            <li class="nav-item submenu dropdown">
+                                <a href="product.html" class="nav-link dropdown-toggle" role="button"
+                                    aria-haspopup="true" aria-expanded="false">產品</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="product_content.html">玻璃</a>
+                                    <li class="nav-item"><a class="nav-link" href="product_content.html">瓦器</a>
+                                    <li class="nav-item"><a class="nav-link" href="product_content.html">燈罩</a>
+                                    <li class="nav-item"><a class="nav-link" href="product_content.html">其他</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">技術與認證</a>
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" aria-haspopup="true"
+                                    aria-expanded="false">切換語言</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="#">中文繁體</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">中文簡體</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">英文</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item"><a class="nav-link" href="#">客戶服務</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item"><a href="#" class="search"><i class="fas fa-search"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--================Header Menu Area =================-->
 
 
 
@@ -80,66 +98,56 @@
         </a>
     </div>
 
-    <!-- footer start -->
- <footer class="footers">
-    <div class="container footerbox">
-        <div>
-            <div>
-                <a href=""><img src="/img/index/chu_logo.png" alt=""></a>
-            </div>
-            <div class="ciclebox">
-                <a href="https://www.facebook.com/CHU1990/"><div class="cicle fb"></div></a>
-                <a href="https://www.youtube.com/channel/UCsRF01_65MkuhI7Baq1rYbQ"><div class="cicle yt"></div></a>
-                <a href="https://www.instagram.com/chunghua1990/"><div class="cicle ig"></div></a>
-                <a href="https://page.line.me/chu1990?openQrModal=true"><div class="cicle line"></div></a>     
-            </div>
-        </div>
-        <div class="connection">
-            <p class="ftitle">聯絡訊息</p>
-            <p>
-                30012 新竹市五福路二段707號<br>
-            707, Sec.2, WuFu Rd., Hsinchu, 30012 Taiwan (ROC)<br>
-            電話：03-5374281~5　傳真：03-5373771
-            </p> 
-            <p class="ftitle">緊急聯絡</p>
-            <p>
-                緊急聯絡專線：0972-590728<br>
-                學生宿舍專線：03-5376000，03-5375015<br>
-            </p> 
-        </div>
-        <div>
-            <header><h4>Useful Links</h4></header>
-            <div class="footerlinkbox">
-                
-            <div class="footerlink">
-            
-                <ul>
-                    <li><a  href="/index.html">Home</a></li>
-        
-                    <li><a href="/AboutCOM.html">About&nbsp;COM</a></li>
-
-                    <li><a href="/Academics.html">Academics</a></li>
-
-                    <li><a href="/AACSBAccreditation.html">AACSB&nbsp;Accreditation</a></li>
-
-                </ul>
-            </div>
-            <div class="footerlink">
-                <ul>
-                    <li><a href="/Admission.html">Admission</a></li>
-
-                    <li><a href="/InternationalCOM.html">International&nbsp;COM</a></li>
-
-                    <li><a href="/LifeinCOM.html">Life&nbsp;in&nbsp;COM</a></li>
-
-                    <li><a href="/New&Event.html">News&nbsp;&&nbsp;Event</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    </div>
-</footer>
-           <!-- footer end -->
+    <!-- Footer section -->
+	<footer class="footer-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-2 col-sm-12">
+					<div class="footer-widget">
+						<a class="" style="font-size: 1.5rem; color:#fff; text-decoration: none;" href="index.html"><img
+								src="img/logo.png" class="mr-2" style="width: 80px; height: 80px;" alt="">利銓玻璃</a>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4">
+					<div class="footer-widget">
+						<h5>連接</h5>
+						<ul>
+							<li><a href="">首頁</a></li>
+							<li><a href="">理念</a></li>
+							<li><a href="">客戶服務</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4">
+					<div class="footer-widget">
+						<h5>聲明</h5>
+						<ul>
+							<li><a href="">網站聲明</a></li>
+							<li><a href="">隱私權聲明</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-4">
+					<div class="footer-widget">
+						<h5>社群</h5>
+						<div class="footer-social">
+							<a href=""><i class="fab fa-facebook"></i></a>
+							<a href=""><i class="fab fa-linkedin"></i></a>
+							<a href=""><i class="fab fa-twitter"></i></a>
+							<a href=""><i class="fab fa-youtube"></i></a>
+							<a href=""><i class="fab fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				利銓玻璃 &copy;
+				<script>document.write(new Date().getFullYear());</script> <i class="fa fa-heart-o"
+					aria-hidden="true"></i> 版權所有
+			</div>
+		</div>
+	</footer>
+	<!-- Footer section end-->
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -152,6 +160,9 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script src="/js/Admission/Admission.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+	<script src="js/theme.js"></script>
+	<script src="js/index.js"></script>
 
 </body>
 </html>
