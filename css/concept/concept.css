@@ -2375,7 +2375,7 @@ Footer section
    }
   
 }
-@media (max-width: 411px){
+@media (max-width: 415px){
   #past_page{
     margin-top: -70%;
     margin-left: -35%;
@@ -2633,49 +2633,3 @@ Footer section
     font-size: 50px;
    }
 }
-/* @media (max-width: 1310px){
-	#past_page{
-   margin-top: -20%;
-   height:  80%;
-  }
-  #now_page{
-    margin-top: -20%;
-    height:  80%;
-   }
-   
-   
-   .page header {
-    margin-top: -3%;
-   }
-   #del_page_but{
-    margin-top: -20%;
-    } 
-    #del_page_but:active{
-      margin-top: -20%;
-      } 
-    #page_but_left{
-      margin-top: 0%;
-      margin-left: -40%;
-      font-size: 50px;
-     }
-     #page_but_left:active {
-      margin-top: 0%;
-      margin-left: -40%;
-      font-size: 50px;
-     }
-    
-     #page_but_right{
-      margin-top: 0%;
-      margin-left: 38%;
-      font-size: 50px;
-     }
-     #page_but_right:active{
-      margin-top: 0%;
-      margin-left: 38%;
-      font-size: 50px;
-     }
-  
-}
-
-   */
- 
