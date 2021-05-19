@@ -1,99 +1,8 @@
-/* navbar start */
-.navbar-toggle,.navbar-default:focus,
-.navbar-toggle,.navbar-default:hover{
-  background-color: transparent;
+h2,
+a,
+p {
+  font-family: cursive;
 }
-#pagelink{
-  background-color: black;
-  padding: 1% 0;
-  border-color: transparent;
-  margin-bottom: 0;
-  
-}
-
-
-#pagelink ul li{
-
-
-  color: white;
-  z-index: 1;
-
-}
-
-#pagelink li a{
-  color: white;
-  font-size: 20px;
-}
-#pagelink li:hover a{
-  color: orange;
-  border-bottom: 2px solid orange;
-  background-color: transparent;
-}
-#active{
-  color: orange !important;;
-  border-bottom: 2px solid orange;
-}
-.menu{
-  display: flex;
-  width: 70%;
-  justify-content: space-between;
-}
-
-@media screen and (Max-Width:  1425px) {
-  .logo{
-    width: 100%;
-  }
-  #pagelink{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0;
-    flex-wrap: wrap;
-  }
-  .menu{
-    width: 100%;
-  }
-}
-@media screen and (Max-Width:  1165px) {
-
-  #pagelink li a{
-    font-size: 15px;
-  }
-}
-@media screen and (Max-Width:  992px) {
-
-  #pagelink{
-    display: block;
-    justify-content: none;
-
-  }
-  #pagelink li a{
-      font-size: 11px;
-    }
-    #pagelink ul {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .menu{
-      justify-content: center;
-    }
-
-}
-@media screen and (Max-Width:  842px) {
-  #pagelink li a{
-    font-size: 5px;
-  }
-  #pagelink li{
-    width: 150px;
-  }
-}
-@media screen and (Max-Width:  767px) {
-  .menu{
-    display: block;
-  }
-}
-
-
-/* navbar end */
 
 
 
@@ -157,67 +66,90 @@ body{
         font-size: 12px;
     }
   }
-/* footer start */
-.footers{
-    padding: 2% 0;
-    background-color: black;
-    color: white;
+/* ----------------
+Footer section
+ ---------------------*/
+
+ .footer-section {
+  padding: 65px 0;
+  background: #353649;
+}
+
+.footer-widget {
+  margin-bottom: 40px;
+}
+
+.footer-widget h5 {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 35px;
+  padding-top: 15px;
+}
+
+.footer-widget ul {
+  list-style: none;
+}
+
+.footer-widget ul li a {
+  display: block;
+  color: #acaebc;
+  padding: 2px 0;
+  margin-bottom: 8px;
+}
+
+.footer-social a {
+  display: inline-table;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #7e7f8f;
+  border-radius: 50%;
+  color: #7e7f8f;
+  font-size: 12px;
+  text-align: center;
+  margin-right: 6px;
+  margin-bottom: 5px;
+}
+
+.footer-social a i {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.copyright {
+  padding-top: 10px;
+  font-size: 16px;
+  color: #83869b;
+}
+
+.copyright a {
+  color: #83869b;
+  text-decoration: underline;
+}
+
+.set-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a {
+  color: #fff;
+}
+
+/* Small Mobile :320px. */
+
+@media only screen and (max-width: 479px) {
+  .features-section {
+    padding-left: 15px;
+    padding-right: 15px;
   }
-  .footerbox{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .ciclebox{
-    margin-top: 10%;
-    width: 250px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .cicle{
-    width: 40px;
-    height: 40px;
-    border: 2px solid black;
-    border-radius: 99%;
-  }
-  .connection{
-    margin-left: 5%;
-  }
-  .ftitle{
-    font-size: 20px;
-  }
-  .footerlinkbox{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .footerlink ul{
-   
-    list-style: none;
-  }
-  .footerlink li{
-    margin-bottom: 8%;
-  }
-  .footerlink a{
-    font-size: 15px;
-    color: white;
-  }
-  .footerlink a:hover{
-    color: orange;
-  }
-  .yt{
-    background-image: url(/img/index/yt.png);
-    background-size: 100% 100%;
-  }
-  .fb{
-    background-image: url(/img/index/fb.png);
-    background-size: 100% 100%;
-  }
-  .ig{
-    background-image: url(/img/index/IG.png);
-    background-size: 100% 100%;
-  }
-  .line{
-    background-image: url(/img/index/line.png);
-    background-size: 100% 100%;
-  }
-  /* footer end */
+}
