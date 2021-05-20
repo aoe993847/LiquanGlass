@@ -330,47 +330,7 @@ $(document).ready(function () {
 
   //================== panel area end ==================
 
-  //================== product menu start ==================
-  var i = 0;
-  page();
-  $("#bta").click(function () {
-    $("#pr_a").empty(".page_set");
-    for (i = 0; i <= 54; i++) {
-      $("#pr_a").prepend(
-        ' <div class="page_set glass col-lg-2"><img class="p_img" src="/img/LiquanGlass_image/動物造型/利銓-動物造型_200813.jpg" /></div>'
-      );
-    }
-    page();
-  });
 
-  $("#btb").click(function () {
-    $("#pr_a").empty(".page_set");
-    for (i = 0; i <= 54; i++) {
-      $("#pr_a").prepend(
-        '<div class="page_set pattern col-lg-2"><img class="p_img" src="/img/LiquanGlass_image/器皿/利銓-器皿類_200813_101.jpg" /></div>'
-      );
-    }
-    page();
-  });
-  $("#btc").click(function () {
-    $("#pr_a").empty(".page_set");
-    for (i = 0; i <= 54; i++) {
-      $("#pr_a").prepend(
-        '<div class="page_set light col-lg-2"><img class="p_img" src="/img/LiquanGlass_image/器皿/利銓-器皿類_200813_134.jpg" /></div>'
-      );
-    }
-    page();
-  });
-  $("#btd").click(function () {
-    $("#pr_a").empty(".page_set");
-    for (i = 0; i <= 55; i++) {
-      $("#pr_a").prepend(
-        '<div class="page_set other col-lg-2"><img class="p_img" src="/img/LiquanGlass_image/藝術花容器/利銓-藝術花器（容器）_200813_7.jpg" /></div>'
-      );
-    }
-    page();
-  });
-  //================== product menu end ==================
 
   //================== product List area start==================
   $(document).on("click", ".glass", function () {
