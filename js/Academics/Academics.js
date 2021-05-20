@@ -60,5 +60,3 @@ $(".paragraph_D").click(function(){
 $(".paragraph_E").click(function(){
     $(".paragraph_e").slideToggle();
 });
-
-
