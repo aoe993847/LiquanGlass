@@ -20,7 +20,7 @@ body{
     display: flex;
 }
 .Businessbox{
-    background-image: url(/img/Academics/1.png);
+    background-image: url(/img/Academics/1.jpg);
     background-size: 100% 100%;
     
 }
@@ -29,7 +29,7 @@ body{
     transition: 0.5s;
 }
 .Industrialbox{
-    background-image: url(/img/Academics/2.png);
+    background-image: url(/img/Academics/2.jpg);
     background-size: 100% 100%;
 }
 .Industrialbox:hover .Industrial{
@@ -37,7 +37,7 @@ body{
     transition: 0.5s;
 }
 .Informationbox{
-    background-image: url(/img/Academics/3.png);
+    background-image: url(/img/Academics/3.jpg);
     background-size: 100% 100%;
 }
 .Informationbox:hover .Information{
@@ -45,7 +45,7 @@ body{
     transition: 0.5s;
 }
 .Financebox{
-    background-image: url(/img/Academics/4.png);
+    background-image: url(/img/Academics/4.jpg);
     background-size: 100% 100%;
 }
 .Financebox:hover .Finance{
@@ -84,7 +84,7 @@ body{
 }
 .CEPMbox{
     width: 100%;
-    background-image: url(/img/Academics/5.png);
+    background-image: url(/img/Academics/5.jpg);
     background-size: 100% 100%;
 }
 .CEPM{
