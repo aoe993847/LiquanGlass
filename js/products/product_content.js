@@ -1132,36 +1132,190 @@ $(document).ready(function () {
 
   //==================================== panel btn start =============================
 
-  var isclick = 0;
+  var isclick1 = 0;
   if ($(window).width() < 500) {
-    isclick = 0;
-    $(".btn_control").click(function () {
-      if (isclick == 0) {
-        $(".btn_control").text("<");
-        $(".product_sidepanel").animate(
+    isclick1 = 0;
+    $(".btn_control-1").click(function () {
+      if (isclick1 == 0) {
+        $(".btn_control-1").text("<");
+        $(".product_sidepanel-1").animate(
           {
             width: "toggle",
           },
-          550
+          510
         );
-        $(".btn_control").animate(
+        $(".btn_control-1").animate(
           {
             right: "0%",
           },
           530
         );
-        isclick = 1;
-      } else if (isclick == 1) {
-        $(".btn_control").text(">");
-        $(".product_sidepanel").animate(
+        isclick1 = 1;
+      } else if (isclick1 == 1) {
+        $(".btn_control-1").text(">");
+        $(".product_sidepanel-1").animate(
           {
             width: "toggle",
           },
           550
         );
-        $(".btn_control").animate(
+        $(".btn_control-1").animate(
           {
             right: "19%",
+          },
+          550
+        );
+        isclick1 = 0;
+      }
+    });
+  }
+  if ($(window).width() < 769) {
+    isclick1 = 2;
+    $(".btn_control-1").click(function () {
+      if (isclick1 == 2) {
+        $(".btn_control-1").text("<");
+        $(".product_sidepanel-1").animate(
+          {
+            width: "toggle",
+          },
+          550
+        );
+        $(".btn_control-1").animate(
+          {
+            right: "0%",
+          },
+          530
+        );
+        isclick1 = 3;
+      } else if (isclick1 == 3) {
+        $(".btn_control-1").text(">");
+        $(".product_sidepanel-1").animate(
+          {
+            width: "toggle",
+          },
+          550
+        );
+        $(".btn_control-1").animate(
+          {
+            right: "19%",
+          },
+          550
+        );
+        isclick1 = 2;
+      }
+    });
+  }
+
+  if ($(window).width() < 1200) {
+    isclick1 = 4;
+    $(".btn_control-1").click(function () {
+      if (isclick1 == 4) {
+        $(".btn_control-1").text("<");
+        $(".product_sidepanel-1").animate(
+          {
+            width: "toggle",
+          },
+          550
+        );
+        $(".btn_control-1").animate(
+          {
+            right: "0%",
+          },
+          530
+        );
+
+        isclick1 = 5;
+      } else if (isclick1 == 5) {
+        $(".btn_control-1").text(">");
+        $(".product_sidepanel-1").animate(
+          {
+            width: "toggle",
+          },
+          550
+        );
+        $(".btn_control-1").animate(
+          {
+            right: "19%",
+          },
+          550
+        );
+        isclick1 = 4;
+      }
+    });
+  }
+  if ($(window).width() > 1201) {
+    isclick1 = 6;
+    $(".btn_control-1").click(function () {
+      if (isclick1 == 6) {
+        $(".btn_control-1").text("<");
+        $(".product_sidepanel-1").animate(
+          {
+            width: "toggle",
+          },
+          550
+        );
+        $(".btn_control-1").animate(
+          {
+            right: "0%",
+          },
+          530
+        );
+
+        isclick1 = 7;
+      } else if (isclick1 == 7) {
+        $(".btn_control-1").text(">");
+        $(".product_sidepanel-1").animate(
+          {
+            width: "toggle",
+          },
+          550
+        );
+        $(".btn_control-1").animate(
+          {
+            right: "24%",
+          },
+          550
+        );
+        isclick1 = 6;
+      }
+    });
+  }
+  //==================================== panel btn start =============================
+
+  // $(window).resize(function () {
+  //     window.location.reload();
+  // });
+
+  var isclick = 0;
+  if ($(window).width() < 500) {
+    isclick = 0;
+    $(".btn_control-2").click(function () {
+      if (isclick == 0) {
+        $(".btn_control-2").text(">");
+        $(".product_sidepanel-2").animate(
+          {
+            width: "toggle",
+          },
+          510
+        );
+        $(".btn_control-2").animate(
+          {
+            left: "0%",
+          },
+          530
+        );
+        isclick = 1;
+      } else if (isclick == 1) {
+        $(".btn_control-2").text("<");
+        $(".product_sidepanel-2").animate(
+          {
+            width: "toggle",
+          },
+          550
+        );
+        $(".btn_control-2").animate(
+          {
+            left: "21%",
           },
           550
         );
@@ -1171,33 +1325,33 @@ $(document).ready(function () {
   }
   if ($(window).width() < 769) {
     isclick = 2;
-    $(".btn_control").click(function () {
+    $(".btn_control-2").click(function () {
       if (isclick == 2) {
-        $(".btn_control").text("<");
-        $(".product_sidepanel").animate(
+        $(".btn_control-2").text(">");
+        $(".product_sidepanel-2").animate(
           {
             width: "toggle",
           },
           550
         );
-        $(".btn_control").animate(
+        $(".btn_control-2").animate(
           {
-            right: "0%",
+            left: "0%",
           },
           530
         );
         isclick = 3;
       } else if (isclick == 3) {
-        $(".btn_control").text(">");
-        $(".product_sidepanel").animate(
+        $(".btn_control-2").text("<");
+        $(".product_sidepanel-2").animate(
           {
             width: "toggle",
           },
           550
         );
-        $(".btn_control").animate(
+        $(".btn_control-2").animate(
           {
-            right: "19%",
+            left: "21%",
           },
           550
         );
@@ -1208,34 +1362,34 @@ $(document).ready(function () {
 
   if ($(window).width() < 1200) {
     isclick = 4;
-    $(".btn_control").click(function () {
+    $(".btn_control-2").click(function () {
       if (isclick == 4) {
-        $(".btn_control").text("<");
-        $(".product_sidepanel").animate(
+        $(".btn_control-2").text(">");
+        $(".product_sidepanel-2").animate(
           {
             width: "toggle",
           },
           550
         );
-        $(".btn_control").animate(
+        $(".btn_control-2").animate(
           {
-            right: "0%",
+            left: "0%",
           },
           530
         );
 
         isclick = 5;
       } else if (isclick == 5) {
-        $(".btn_control").text(">");
-        $(".product_sidepanel").animate(
+        $(".btn_control-2").text("<");
+        $(".product_sidepanel-2").animate(
           {
             width: "toggle",
           },
           550
         );
-        $(".btn_control").animate(
+        $(".btn_control-2").animate(
           {
-            right: "19%",
+            left: "21%",
           },
           550
         );
@@ -1245,34 +1399,34 @@ $(document).ready(function () {
   }
   if ($(window).width() > 1201) {
     isclick = 6;
-    $(".btn_control").click(function () {
+    $(".btn_control-2").click(function () {
       if (isclick == 6) {
-        $(".btn_control").text("<");
-        $(".product_sidepanel").animate(
+        $(".btn_control-2").text(">");
+        $(".product_sidepanel-2").animate(
           {
             width: "toggle",
           },
           550
         );
-        $(".btn_control").animate(
+        $(".btn_control-2").animate(
           {
-            right: "0%",
+            left: "0%",
           },
           530
         );
 
         isclick = 7;
       } else if (isclick == 7) {
-        $(".btn_control").text(">");
-        $(".product_sidepanel").animate(
+        $(".btn_control-2").text("<");
+        $(".product_sidepanel-2").animate(
           {
             width: "toggle",
           },
           550
         );
-        $(".btn_control").animate(
+        $(".btn_control-2").animate(
           {
-            right: "24%",
+            left: "26%",
           },
           550
         );
@@ -1280,9 +1434,12 @@ $(document).ready(function () {
       }
     });
   }
-  //==================================== panel btn start =============================
 
-  // $(window).resize(function () {
-  //     window.location.reload();
-  // });
+
+
 });
+
+
+
+
+
