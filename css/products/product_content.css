@@ -743,10 +743,9 @@ input:focus {
     }
     .p_v {
         border: none;
-        width: 60%;
         height: 85%;
         position: absolute;
-        left: 20%;
+        left: 25%;
         top: 5%;
     }
     .panel>h3, .panel>p {
@@ -911,10 +910,9 @@ input:focus {
         display: none;
     }
     .p_v {
-        width: 60%;
         height: 85%;
         position: absolute;
-        left: 20%;
+        left: 22%;
         top: 5%;
         border: none;
     }
@@ -1072,10 +1070,9 @@ input:focus {
     }
     .p_v {
         border: none;
-        width: 400px;
-        height: 85%;
+        height: 70%;
         position: absolute;
-        left: 20%;
+        left: 28%;
         top: 5%;
     }
     .panel>h3, .panel>p {
@@ -1189,11 +1186,10 @@ input:focus {
     }
     .p_v {
         border: none;
-        width: 500px;
-        height: 85%;
+        height: 70%;
         position: absolute;
-        left: 20%;
-        top: 5%;
+        left: 38%;
+        top: 15%;
     }
     .panel>h3, .panel>p {
         text-align: center;
@@ -1296,11 +1292,10 @@ input:focus {
     }
     .p_v {
         border: none;
-        width: 600px;
-        height: 85%;
+        height: 80%;
         position: absolute;
-        left: 21%;
-        top: 5%;
+        left: 35%;
+        top: 10%;
     }
     .panel>h3, .panel>p {
         text-align: center;
@@ -1412,11 +1407,10 @@ input:focus {
     
     .p_v {
         border: none;
-        width: 600px;
-        height: 85%;
+        height: 70%;
         position: absolute;
-        left: 25%;
-        top: 5%;
+        left: 38%;
+        top: 15%;
         
     }
     .panel>h3, .panel>p {
@@ -1481,10 +1475,9 @@ input:focus {
     } 
     .p_v {
         border: none;
-        width: 800px;
         height: 85%;
         position: absolute;
-        left: 20%;
+        left: 34%;
         z-index: 1;
     }
     .color_control {
@@ -1547,10 +1540,9 @@ input:focus {
     } 
     .p_v {
         border: none;
-        width: 800px;
         height: 85%;
         position: absolute;
-        left: 20%;
+        left: 35%;
     }
     .color_control {
         padding: 0;
@@ -1611,10 +1603,9 @@ input:focus {
     } 
     .p_v {
         border: none;
-        width: 1000px;
         height: 85%;
         position: absolute;
-        left: 25%;
+        left: 40%;
     }
     .color_control {
         padding: 0;
