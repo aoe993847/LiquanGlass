@@ -22,7 +22,7 @@
 
 $(document).ready(function () {
   //================== panel area start ==================
-
+            // 商品顏色更換
   function set_color_phone() {
     if ($(window).width() > 511) {
       $(".phone_color").append('<p id="ap_color">顏色</p>');
@@ -99,11 +99,9 @@ $(document).ready(function () {
         margin: "5px",
         cursor: "pointer",
       });
-      $(".phone_color").append('<p id="ap_pattern">花紋</p>');
+     
       $(".phone_color").append('<div id="pattern_wrap"></div>');
-      $("#pattern_wrap").append('<button class="pa_set pattern1">1</button>');
-      $("#pattern_wrap").append('<button class="pa_set pattern2">2</button>');
-      $("#pattern_wrap").append('<button class="pa_set pattern3">3</button>');
+     
       $("#ap_pattern").css({
         position: "absolute",
         top: "3%",
@@ -171,11 +169,9 @@ $(document).ready(function () {
         margin: "3px",
         cursor: "pointer",
       });
-      $(".phone_color").append('<p id="ap_pattern">花紋</p>');
+     
       $(".phone_color").append('<div id="pattern_wrap"></div>');
-      $("#pattern_wrap").append('<button class="pa_set pattern1">1</button>');
-      $("#pattern_wrap").append('<button class="pa_set pattern2">2</button>');
-      $("#pattern_wrap").append('<button class="pa_set pattern3">3</button>');
+     
       $("#ap_pattern").css({
         position: "absolute",
         top: "3%",
@@ -267,11 +263,9 @@ $(document).ready(function () {
         cursor: "pointer",
       });
       $("#panelid").append("<hr>");
-      $("#panelid").append("<p>花紋</p>");
+     
       $("#panelid").append('<div id="pattern_wrap"></div>');
-      $("#pattern_wrap").append('<button class="pa_set pattern1">1</button>');
-      $("#pattern_wrap").append('<button class="pa_set pattern2">2</button>');
-      $("#pattern_wrap").append('<button class="pa_set pattern3">3</button>');
+     
       $("#pattern_wrap").css({
         width: "100%",
         "text-align": "center",
@@ -331,227 +325,229 @@ $(document).ready(function () {
   //================== panel area end ==================
 
   //================== product menu start ==================
-  var i = 0;
-  page();
-  $("#bta").click(function () {
-    $("#pr_a").empty(".page_set");
-    for (i = 0; i <= 54; i++) {
-      $("#pr_a").prepend(
-        ' <div class="page_set glass col-lg-2"><img class="p_img" src="/img/LiquanGlass_image/動物造型/利銓-動物造型_200813.jpg" /></div>'
-      );
-    }
-    page();
-  });
+              // 下方表單切換
+  // var i = 0;
+  // page();
+  // $("#bta").click(function () {
+  //   $("#pr_a").empty(".page_set");
+  //   for (i = 0; i <= 54; i++) {
+  //     $("#pr_a").prepend(
+  //       ' <div class="page_set glass col-lg-2"><img class="p_img" src="/img/LiquanGlass_image/動物造型/利銓-動物造型_200813.jpg" /></div>'
+  //     );
+  //   }
+  //   page();
+  // });
 
-  $("#btb").click(function () {
-    $("#pr_a").empty(".page_set");
-    for (i = 0; i <= 54; i++) {
-      $("#pr_a").prepend(
-        '<div class="page_set pattern col-lg-2"><img class="p_img" src="/img/LiquanGlass_image/器皿/利銓-器皿類_200813_101.jpg" /></div>'
-      );
-    }
-    page();
-  });
-  $("#btc").click(function () {
-    $("#pr_a").empty(".page_set");
-    for (i = 0; i <= 54; i++) {
-      $("#pr_a").prepend(
-        '<div class="page_set light col-lg-2"><img class="p_img" src="/img/LiquanGlass_image/器皿/利銓-器皿類_200813_134.jpg" /></div>'
-      );
-    }
-    page();
-  });
-  $("#btd").click(function () {
-    $("#pr_a").empty(".page_set");
-    for (i = 0; i <= 55; i++) {
-      $("#pr_a").prepend(
-        '<div class="page_set other col-lg-2"><img class="p_img" src="/img/LiquanGlass_image/藝術花容器/利銓-藝術花器（容器）_200813_7.jpg" /></div>'
-      );
-    }
-    page();
-  });
+  // $("#btb").click(function () {
+  //   $("#pr_a").empty(".page_set");
+  //   for (i = 0; i <= 54; i++) {
+  //     $("#pr_a").prepend(
+  //       '<div class="page_set pattern col-lg-2"><img class="p_img" src="/img/LiquanGlass_image/器皿/利銓-器皿類_200813_101.jpg" /></div>'
+  //     );
+  //   }
+  //   page();
+  // });
+  // $("#btc").click(function () {
+  //   $("#pr_a").empty(".page_set");
+  //   for (i = 0; i <= 54; i++) {
+  //     $("#pr_a").prepend(
+  //       '<div class="page_set light col-lg-2"><img class="p_img" src="/img/LiquanGlass_image/器皿/利銓-器皿類_200813_134.jpg" /></div>'
+  //     );
+  //   }
+  //   page();
+  // });
+  // $("#btd").click(function () {
+  //   $("#pr_a").empty(".page_set");
+  //   for (i = 0; i <= 55; i++) {
+  //     $("#pr_a").prepend(
+  //       '<div class="page_set other col-lg-2"><img class="p_img" src="/img/LiquanGlass_image/藝術花容器/利銓-藝術花器（容器）_200813_7.jpg" /></div>'
+  //     );
+  //   }
+  //   page();
+  // });
   //================== product menu end ==================
 
   //================== product List area start==================
-  $(document).on("click", ".glass", function () {
-    $(".video-container").remove();
-    $("#panelid").empty(".panel_content");
-    $("#panelid").prepend(
-      "<h3>商品資訊</h3>",
-      "<li>品名 :</li>",
-      "<li>編號 :</li>",
-      "<li>價格 :</li>",
-      "<hr>",
-      "<h3>商品介紹</h3>",
-      "<li>內容</li>"
-    );
+                //商品表單 
+  // $(document).on("click", ".glass", function () {
+  //   $(".video-container").remove();
+  //   $("#panelid").empty(".panel_content");
+  //   $("#panelid").prepend(
+  //     "<h3>商品資訊</h3>",
+  //     "<li>品名 :</li>",
+  //     "<li>編號 :</li>",
+  //     "<li>價格 :</li>",
+  //     "<hr>",
+  //     "<h3>商品介紹</h3>",
+  //     "<li>內容</li>"
+  //   );
 
-    $(".color_control").attr("type", "");
-    $(".p_v").attr(
-      "src",
-      "/img/LiquanGlass_image/動物造型/利銓-動物造型_200813.jpg"
-    );
-    $("html, body").animate(
-      {
-        scrollTop: $(".product_view").offset().top,
-      },
-      900
-    );
-    $("#btncontent").click(function () {
-      $("#panelid").empty(".panel_content");
-      $("#panelid").prepend(
-        "<h3>商品資訊</h3>",
-        "<li>品名 :</li>",
-        "<li>編號 :</li>",
-        "<li>價格 :</li>",
-        "<hr>",
-        "<h3>商品介紹</h3>",
-        "<li>內容</li>"
-      );
-    });
-    set_color();
+  //   $(".color_control").attr("type", "");
+  //   $(".p_v").attr(
+  //     "src",
+  //     "/img/LiquanGlass_image/動物造型/利銓-動物造型_200813.jpg"
+  //   );
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: $(".product_view").offset().top,
+  //     },
+  //     900
+  //   );
+  //   $("#btncontent").click(function () {
+  //     $("#panelid").empty(".panel_content");
+  //     $("#panelid").prepend(
+  //       "<h3>商品資訊</h3>",
+  //       "<li>品名 :</li>",
+  //       "<li>編號 :</li>",
+  //       "<li>價格 :</li>",
+  //       "<hr>",
+  //       "<h3>商品介紹</h3>",
+  //       "<li>內容</li>"
+  //     );
+  //   });
+  //   set_color();
 
-    if ($(window).width() < 769) {
-      $(".phone_color").empty("#color_wrap");
-      $(".phone_color").empty("#pattern_wrap");
-      set_color_phone();
-    }
-  });
-  $(document).on("click", ".pattern", function () {
-    $(".video-container").remove();
-    $("#panelid").empty(".panel_content");
-    $("#panelid").prepend(
-      "<h3>商品資訊</h3>",
-      "<li>品名 :</li>",
-      "<li>編號 :</li>",
-      "<li>價格 :</li>",
-      "<hr>",
-      "<h3>商品介紹</h3>",
-      "<li>內容</li>"
-    );
+  //   if ($(window).width() < 769) {
+  //     $(".phone_color").empty("#color_wrap");
+  //     $(".phone_color").empty("#pattern_wrap");
+  //     set_color_phone();
+  //   }
+  // });
+  // $(document).on("click", ".pattern", function () {
+  //   $(".video-container").remove();
+  //   $("#panelid").empty(".panel_content");
+  //   $("#panelid").prepend(
+  //     "<h3>商品資訊</h3>",
+  //     "<li>品名 :</li>",
+  //     "<li>編號 :</li>",
+  //     "<li>價格 :</li>",
+  //     "<hr>",
+  //     "<h3>商品介紹</h3>",
+  //     "<li>內容</li>"
+  //   );
 
-    $(".color_control").attr("type", "");
-    $(".p_v").attr(
-      "src",
-      "/img/LiquanGlass_image/器皿/利銓-器皿類_200813_101.jpg"
-    );
-    $("html, body").animate(
-      {
-        scrollTop: $(".product_view").offset().top,
-      },
-      900
-    );
-    $("#btncontent").click(function () {
-      $("#panelid").empty(".panel_content");
-      $("#panelid").prepend(
-        "<h3>商品資訊</h3>",
-        "<li>品名 :</li>",
-        "<li>編號 :</li>",
-        "<li>價格 :</li>",
-        "<hr>",
-        "<h3>商品介紹</h3>",
-        "<li>內容</li>"
-      );
-    });
-    set_color();
+  //   $(".color_control").attr("type", "");
+  //   $(".p_v").attr(
+  //     "src",
+  //     "/img/LiquanGlass_image/器皿/利銓-器皿類_200813_101.jpg"
+  //   );
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: $(".product_view").offset().top,
+  //     },
+  //     900
+  //   );
+  //   $("#btncontent").click(function () {
+  //     $("#panelid").empty(".panel_content");
+  //     $("#panelid").prepend(
+  //       "<h3>商品資訊</h3>",
+  //       "<li>品名 :</li>",
+  //       "<li>編號 :</li>",
+  //       "<li>價格 :</li>",
+  //       "<hr>",
+  //       "<h3>商品介紹</h3>",
+  //       "<li>內容</li>"
+  //     );
+  //   });
+  //   set_color();
 
-    if ($(window).width() < 769) {
-      $(".phone_color").empty("#color_wrap");
-      $(".phone_color").empty("#pattern_wrap");
-      set_color_phone();
-    }
-  });
-  $(document).on("click", ".light", function () {
-    $(".video-container").remove();
-    $("#panelid").empty(".panel_content");
-    $("#panelid").prepend(
-      "<h3>商品資訊</h3>",
-      "<li>品名 :</li>",
-      "<li>編號 :</li>",
-      "<li>價格 :</li>",
-      "<hr>",
-      "<h3>商品介紹</h3>",
-      "<li>內容</li>"
-    );
-    $(".color_control").attr("type", "");
-    $(".p_v").attr(
-      "src",
-      "/img/LiquanGlass_image/器皿/利銓-器皿類_200813_134.jpg"
-    );
-    $("html, body").animate(
-      {
-        scrollTop: $(".product_view").offset().top,
-      },
-      900
-    );
+  //   if ($(window).width() < 769) {
+  //     $(".phone_color").empty("#color_wrap");
+  //     $(".phone_color").empty("#pattern_wrap");
+  //     set_color_phone();
+  //   }
+  // });
+  // $(document).on("click", ".light", function () {
+  //   $(".video-container").remove();
+  //   $("#panelid").empty(".panel_content");
+  //   $("#panelid").prepend(
+  //     "<h3>商品資訊</h3>",
+  //     "<li>品名 :</li>",
+  //     "<li>編號 :</li>",
+  //     "<li>價格 :</li>",
+  //     "<hr>",
+  //     "<h3>商品介紹</h3>",
+  //     "<li>內容</li>"
+  //   );
+  //   $(".color_control").attr("type", "");
+  //   $(".p_v").attr(
+  //     "src",
+  //     "/img/LiquanGlass_image/器皿/利銓-器皿類_200813_134.jpg"
+  //   );
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: $(".product_view").offset().top,
+  //     },
+  //     900
+  //   );
 
-    $("#btncontent").click(function () {
-      $("#panelid").empty(".panel_content");
-      $("#panelid").prepend(
-        "<h3>商品資訊</h3>",
-        "<li>品名 :</li>",
-        "<li>編號 :</li>",
-        "<li>價格 :</li>",
-        "<hr>",
-        "<h3>商品介紹</h3>",
-        "<li>內容</li>"
-      );
-    });
-    set_color();
+  //   $("#btncontent").click(function () {
+  //     $("#panelid").empty(".panel_content");
+  //     $("#panelid").prepend(
+  //       "<h3>商品資訊</h3>",
+  //       "<li>品名 :</li>",
+  //       "<li>編號 :</li>",
+  //       "<li>價格 :</li>",
+  //       "<hr>",
+  //       "<h3>商品介紹</h3>",
+  //       "<li>內容</li>"
+  //     );
+  //   });
+  //   set_color();
 
-    if ($(window).width() < 769) {
-      $(".phone_color").empty("#color_wrap");
-      $(".phone_color").empty("#pattern_wrap");
-      set_color_phone();
-    }
-  });
-  $(document).on("click", ".other", function () {
-    $(".video-container").remove();
-    $("#panelid").empty(".panel_content");
-    $("#panelid").prepend(
-      "<h3>商品資訊</h3>",
-      "<li>品名 :</li>",
-      "<li>編號 :</li>",
-      "<li>價格 :</li>",
-      "<hr>",
-      "<h3>商品介紹</h3>",
-      "<li>內容</li>"
-    );
-    $(".color_control").attr("type", "");
-    $(".p_v").attr(
-      "src",
-      "/img/LiquanGlass_image/藝術花容器/利銓-藝術花器（容器）_200813_7.jpg"
-    );
-    $("html, body").animate(
-      {
-        scrollTop: $(".product_view").offset().top,
-      },
-      900
-    );
-    $("#btncontent").click(function () {
-      $("#panelid").empty(".panel_content");
-      $("#panelid").prepend(
-        "<h3>商品資訊</h3>",
-        "<li>品名 :</li>",
-        "<li>編號 :</li>",
-        "<li>價格 :</li>",
-        "<hr>",
-        "<h3>商品介紹</h3>",
-        "<li>內容</li>"
-      );
-    });
-    set_color();
+  //   if ($(window).width() < 769) {
+  //     $(".phone_color").empty("#color_wrap");
+  //     $(".phone_color").empty("#pattern_wrap");
+  //     set_color_phone();
+  //   }
+  // });
+  // $(document).on("click", ".other", function () {
+  //   $(".video-container").remove();
+  //   $("#panelid").empty(".panel_content");
+  //   $("#panelid").prepend(
+  //     "<h3>商品資訊</h3>",
+  //     "<li>品名 :</li>",
+  //     "<li>編號 :</li>",
+  //     "<li>價格 :</li>",
+  //     "<hr>",
+  //     "<h3>商品介紹</h3>",
+  //     "<li>內容</li>"
+  //   );
+  //   $(".color_control").attr("type", "");
+  //   $(".p_v").attr(
+  //     "src",
+  //     "/img/LiquanGlass_image/藝術花容器/利銓-藝術花器（容器）_200813_7.jpg"
+  //   );
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: $(".product_view").offset().top,
+  //     },
+  //     900
+  //   );
+  //   $("#btncontent").click(function () {
+  //     $("#panelid").empty(".panel_content");
+  //     $("#panelid").prepend(
+  //       "<h3>商品資訊</h3>",
+  //       "<li>品名 :</li>",
+  //       "<li>編號 :</li>",
+  //       "<li>價格 :</li>",
+  //       "<hr>",
+  //       "<h3>商品介紹</h3>",
+  //       "<li>內容</li>"
+  //     );
+  //   });
+  //   set_color();
 
-    if ($(window).width() < 769) {
-      $(".phone_color").empty("#color_wrap");
-      $(".phone_color").empty("#pattern_wrap");
-      set_color_phone();
-    }
-  });
+  //   if ($(window).width() < 769) {
+  //     $(".phone_color").empty("#color_wrap");
+  //     $(".phone_color").empty("#pattern_wrap");
+  //     set_color_phone();
+  //   }
+  // });
 
   //==================================== product List area end =========================
   //==================================== test area ====================================
-
+                  // 針對不同圖片id做出相對應商品內容
   $(document).on("click", "#pr_1", function () {
     $(".video-container").remove();
     $("#panelid").empty(".panel_content");
@@ -1131,7 +1127,7 @@ $(document).ready(function () {
   //==================================== page end ====================================
 
   //==================================== panel btn start =============================
-
+            //  // 右邊伸縮按鈕
   var isclick1 = 0;
   if ($(window).width() < 500) {
     isclick1 = 0;
@@ -1285,6 +1281,7 @@ $(document).ready(function () {
   // $(window).resize(function () {
   //     window.location.reload();
   // });
+                // 左邊伸縮按鈕
 
   var isclick = 0;
   if ($(window).width() < 500) {

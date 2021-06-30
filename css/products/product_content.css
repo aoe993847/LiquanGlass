@@ -1404,13 +1404,20 @@ input:focus {
         z-index: 1;
         display: none;
     }
-    
-    .p_v {
-        border: none;
-        height: 70%;
-        position: absolute;
-        left: 38%;
+    .p_v_out{
+        position: relative;
+        background-color: yellow;
+        width: 250px;
+        left: 35%;
         top: 15%;
+    }
+    .p_v {
+        position: absolute;
+        border: none;
+        width: auto;
+        height: auto;
+        position: absolute;
+      
         
     }
     .panel>h3, .panel>p {
