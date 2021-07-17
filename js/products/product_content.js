@@ -313,12 +313,15 @@ $(document).ready(function () {
     $(".color_control").attr("value", "#FF00FF");
   });
   $(document).on("click", ".pattern1", function () {
-    $(".p_v").attr("src", "/img/LiquanGlass_image/used/01.jpg");
+    $(".p_v").attr("src", "");
+    $(".p_v1").attr("src", "/img/LiquanGlass_image/used/01.jpg");
   });
   $(document).on("click", ".pattern2", function () {
+    $(".p_v1").attr("src", "");
     $(".p_v").attr("src", "/img/LiquanGlass_image/used/02.jpg");
   });
   $(document).on("click", ".pattern3", function () {
+    $(".p_v1").attr("src", "");
     $(".p_v").attr("src", "/img/LiquanGlass_image/used/03.jpg");
   });
 
@@ -561,7 +564,8 @@ $(document).ready(function () {
       "<li>內容</li>"
     );
     $(".color_control").attr("type", "");
-    $(".p_v").attr("src", "/img/LiquanGlass_image/used/01.jpg");
+    $(".p_v1").attr("src", "/img/LiquanGlass_image/used/01.jpg");
+    $(".p_v").attr("src", "");
     $("html, body").animate(
       {
         scrollTop: $(".product_view").offset().top,
@@ -602,6 +606,7 @@ $(document).ready(function () {
     );
 
     $(".color_control").attr("type", "");
+    $(".p_v1").attr("src", "");
     $(".p_v").attr("src", "/img/LiquanGlass_image/used/02.jpg");
     $("html, body").animate(
       {
@@ -642,6 +647,7 @@ $(document).ready(function () {
       "<li>內容</li>"
     );
     $(".color_control").attr("type", "");
+    $(".p_v1").attr("src", "");
     $(".p_v").attr("src", "/img/LiquanGlass_image/used/03.jpg");
     $("html, body").animate(
       {
@@ -1293,7 +1299,7 @@ $(document).ready(function () {
           {
             width: "toggle",
           },
-          510
+          550
         );
         $(".btn_control-2").animate(
           {
@@ -1431,12 +1437,406 @@ $(document).ready(function () {
       }
     });
   }
+  //==================================== page end ====================================
+  //==================================== DIV縮放 ====================================
+  var isclick3 = 0;
+  if ($(window).width() < 500) {
+    isclick3 = 0;
+    $(".morebutton").click(function () {
+      if (isclick3 == 0) {
+        $(".product_sidepanel-2").animate(
+          
+          {
+            height: "90%",
+            width: "100%",
+          },
+          550
+        );
+        $(".btn_control-2").animate(
+          {
+            width: "hide",
+          },
+        );
+        isclick3 = 1;
+      } else if (isclick3 == 1) {
+        $(".product_sidepanel-2").animate(
+          
+          {
+            height: "90%",
+            width: "100%",
+          },
+          550
+        );
+        $(".btn_control-2").animate(
+          {
+            width: "hide",
+          },
+          
+        );
+        isclick3 = 0;
+      }
+    });
+  }
+  if ($(window).width() < 769) {
+    isclick3 = 2;
+    $(".morebutton").click(function () {
+      if (isclick3 == 2) {
+        $(".product_sidepanel-2").animate(
+          
+          {
+            height: "90%",
+            width: "100%",
+          },
+          550
+        );
+        $(".btn_control-2").animate(
+          {
+            width: "hide",
+          },
+        );
+        isclick3 = 3;
+      } else if (isclick3 == 3) {
+        $(".product_sidepanel-2").animate(
+          
+          {
+            height: "90%",
+            width: "100%",
+          },
+          550
+        );
+        $(".btn_control-2").animate(
+          {
+            width: "hide",
+          },
+          
+        );
+        isclick3 = 2;
+      }
+    });
+  }
 
+  if ($(window).width() < 1200) {
+    isclick3 = 4;
+    $(".morebutton").click(function () {
+      if (isclick3 == 4) {
+        $(".product_sidepanel-2").animate(
+          
+          {
+            height: "90%",
+            width: "100%",
+          },
+          550
+        );
+        $(".btn_control-2").animate(
+          {
+            width: "hide",
+          },
+        );
 
+        isclick3 = 5;
+      } else if (isclick3 == 5) {
+        $(".product_sidepanel-2").animate(
+          
+          {
+            height: "90%",
+            width: "100%",
+          },
+          550
+        );
+        $(".btn_control-2").animate(
+          {
+            width: "hide",
+          },
+          
+        );
+        isclick3 = 4;
+      }
+    });
+  }
+  if ($(window).width() > 1201) {
+    isclick3 = 6;
+    $(".morebutton").click(function () {
+      if (isclick3 == 6) {
+        $(".product_sidepanel-2").animate(
+          
+          {
+            height: "90%",
+            width: "98%",
+          },
+          550
+        );
+        $(".morebutton").animate(
+          {
+            width: "hide",
+          },
+        );
+        $(".btn_control-2").animate(
+          {
+            width: "hide",
+          },
+        );
+        
+        
+
+        isclick3 = 7;
+      } else if (isclick3 == 7) {
+        $(".product_sidepanel-2").animate(
+          
+          {
+            height: "90%",
+            width: "98%",
+          },
+          550
+        );
+        $(".morebutton").animate(
+          {
+            width: "hide",
+          },
+        );
+        $(".btn_control-2").animate(
+          {
+            width: "hide",
+          },
+          
+        );
+        
+        isclick3 = 6;
+      }
+    });
+  }
+   //==================================== DIV縮放 ====================================
+  var isclick3 = 0;
+  if ($(window).width() < 500) {
+    isclick3 = 0;
+    $(".morebutton").click(function () {
+      if (isclick3 == 0) {
+        $(".product_sidepanel-2").animate(
+          
+          {
+            height: "95%",
+            width: "25%",
+           
+          },
+          550
+        );
+        $(".morebutton").animate(
+          {
+            width: "toggle",
+          },
+        );
+        $(".btn_control-2").animate(
+          {
+            width: "toggle",
+          },
+        );
+        isclick3 = 1;
+      } else if (isclick3 == 1) {
+        $(".product_sidepanel-2").animate(
+          
+          {
+            height: "95%",
+            width: "25%",
+           
+          },
+          550
+        );
+        $(".btn_control-2").animate(
+          {
+            width: "toggle",
+          },
+          
+        );
+        isclick3 = 0;
+      }
+    });
+  }
+  if ($(window).width() < 769) {
+    isclick3 = 2;
+    $(".morebutton").click(function () {
+      if (isclick3 == 2) {
+        $(".product_sidepanel-2").animate(
+          
+          {
+            height: "95%",
+            width: "25%",
+           
+          },
+          550
+        );
+        $(".btn_control-2").animate(
+          {
+            width: "toggle",
+          },
+        );
+        isclick3 = 3;
+      } else if (isclick3 == 3) {
+        $(".product_sidepanel-2").animate(
+          
+          {
+            height: "95%",
+            width: "25%",
+           
+          },
+          550
+        );
+        
+        $(".btn_control-2").animate(
+          {
+            width: "toggle",
+          },
+          
+        );
+        isclick3 = 2;
+      }
+    });
+  }
+
+  if ($(window).width() < 1200) {
+    isclick3 = 4;
+    $(".morebutton").click(function () {
+      if (isclick3 == 4) {
+        $(".product_sidepanel-2").animate(
+          
+          {
+            height: "95%",
+            width: "25%",
+           
+          },
+          550
+        );
+        $(".btn_control-2").animate(
+          {
+            width: "show",
+          },
+          
+        );
+
+        isclick3 = 5;
+      } else if (isclick3 == 5) {
+        $(".product_sidepanel-2").animate(
+          
+          {
+            height: "95%",
+            width: "25%",
+           
+          },
+          550
+        );
+        $(".btn_control-2").animate(
+          {
+            width: "show",
+          },
+          
+        );
+        isclick3 = 4;
+      }
+    });
+  }
+  if ($(window).width() > 1201) {
+    isclick3 = 6;
+    $(".morebutton2").click(function () {
+      if (isclick3 == 6) {
+        $(".product_sidepanel-2").animate(
+          
+          {
+            height: "95%",
+            width: "25%",
+           
+          },
+          550
+        );
+        $(".morebutton").animate(
+          {
+            width: "show",
+          },
+        );
+        
+        $(".btn_control-2").animate(
+          {
+            width: "show",
+          },
+          
+        );
+       
+        
+        
+
+        isclick3 = 7;
+      } else if (isclick3 == 7) {
+        $(".product_sidepanel-2").animate(
+          {
+            height: "95%",
+            width: "25%",
+           
+          },
+          
+          
+          550
+        );
+        $(".morebutton").animate(
+          {
+            width: "show",
+          },
+        );
+       
+        $(".btn_control-2").animate(
+          {
+            width: "show",
+          },
+          
+        );
+           
+         
+       
+        
+        
+        isclick3 = 6;
+      }
+    });
+  }
+  // 彈出示螢幕
+  var imgObj;
+        function checkImg(theURL,winName){
+        // 物件是否已創建
+        if (typeof(imgObj) == "object"){
+        // 是否已取得了圖像的高度和寬度
+        if ((imgObj.width != 0) && (imgObj.height != 0))
+        // 根據取得的圖像高度和寬度設置彈出視窗的高度與寬度，並打開該視窗
+        // 其中的增量 20 和 30 是設置的視窗邊框與圖片間的間隔量
+        OpenFullSizeWindow(theURL,winName, ",width=" + (imgObj.width+20) + ",height=" + (imgObj.height+30));
+        else
+        // 因為通過 Image 物件動態裝載圖片，不可能立即得到圖片的寬度和高度，所以每隔100毫秒重複調用檢查
+        setTimeout("checkImg('" + theURL + "','" + winName + "')", 100)
+        }
+        }
+        
+        function OpenFullSizeWindow(theURL,winName,features) {
+        var aNewWin, sBaseCmd;
+        // 彈出窗口外觀參數
+        sBaseCmd = "toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,";
+        // 調用是否來自 checkImg
+        if (features == null || features == ""){
+        // 創建圖像物件
+        imgObj = new Image();
+        // 設置圖像源
+        imgObj.src = theURL;
+        // 開始獲取圖像大小
+        checkImg(theURL, winName)
+        }
+        else{
+        // 打開視窗
+        aNewWin = window.open(theURL,winName, sBaseCmd + features);
+        // 聚焦窗口
+        aNewWin.focus();
+        }
+        }
+        //-->
+
+  
 
 });
 
-
+  
 
 
 

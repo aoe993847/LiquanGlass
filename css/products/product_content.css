@@ -148,6 +148,19 @@ hr {
     width: 80%;
     height: 100%;
 }
+/* 跳出圖片 */
+.photo1{
+    z-index: 5;
+    margin-top: 480px;
+    margin-left: 500px;
+     background-color: chocolate; 
+     width: 100px;
+     height: 50px;
+}
+.phototext{
+    font-size: 70%;
+}
+
 
 /* ==================== Hero area end ==================== */
 
@@ -367,6 +380,8 @@ input:focus {
 }
 
 /* ---------------- Footer section ---------------------*/
+
+
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
     html {
@@ -1406,9 +1421,14 @@ input:focus {
     }
     .p_v_out{
         position: relative;
-        background-color: yellow;
         width: 250px;
         left: 35%;
+        top: 15%;
+    }
+    .p_v_out2{
+        position: relative;
+        width: 500px;
+        left: 15%;
         top: 15%;
     }
     .p_v {
@@ -1431,6 +1451,7 @@ input:focus {
         margin-left: 5%;
     }
     
+    
 }
 
 @media screen and (min-width:1201px)and (max-width:1296px) {
@@ -1451,7 +1472,7 @@ input:focus {
     }
     .product_view {
         position: absolute;
-        left: 18%;
+        left: 30%;
         width: 65%;
         height: 580px;
         background-color: #0f0f0f;
@@ -1499,6 +1520,7 @@ input:focus {
         z-index: 4;
         display: none;
     }
+    
 }
 
 @media screen and (min-width:1297px) and (max-width:1599px) {
@@ -1545,11 +1567,24 @@ input:focus {
   .ps-move{
         left: 0px;
     } 
+    .p_v_out{
+        position: relative;
+        width: 350px;
+        left: 32%;
+        top: 10%;
+    }
+    .p_v_out2{
+        position: relative;
+        width: 500px;
+        left: 32%;
+        top: 15%;
+    }
     .p_v {
-        border: none;
-        height: 85%;
         position: absolute;
-        left: 35%;
+        border: none;
+        width: auto;
+        height: auto;
+        position: absolute;
     }
     .color_control {
         padding: 0;
