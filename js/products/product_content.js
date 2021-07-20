@@ -312,18 +312,21 @@ $(document).ready(function () {
     $(".color_control").attr("type", "color");
     $(".color_control").attr("value", "#FF00FF");
   });
-  $(document).on("click", ".pattern1", function () {
-    $(".p_v").attr("src", "");
-    $(".p_v1").attr("src", "/img/LiquanGlass_image/used/01.jpg");
-  });
-  $(document).on("click", ".pattern2", function () {
-    $(".p_v1").attr("src", "");
-    $(".p_v").attr("src", "/img/LiquanGlass_image/used/02.jpg");
-  });
-  $(document).on("click", ".pattern3", function () {
-    $(".p_v1").attr("src", "");
-    $(".p_v").attr("src", "/img/LiquanGlass_image/used/03.jpg");
-  });
+  // $(document).on("click", ".pattern1", function () {
+  //   $(".p_v").attr("src", "");
+  //   $(".p_v1").attr("src", "/img/LiquanGlass_image/used/01.jpg");
+  //   $(".photo").attr("href", "/img/LiquanGlass_image/used/01.jpg");
+  // });
+  // $(document).on("click", ".pattern2", function () {
+  //   $(".p_v1").attr("src", "");
+  //   $(".p_v").attr("src", "/img/LiquanGlass_image/used/02.jpg");
+  //   $(".photo").attr("href", "/img/LiquanGlass_image/used/02.jpg");
+  // });
+  // $(document).on("click", ".pattern3", function () {
+  //   $(".p_v1").attr("src", "");
+  //   $(".p_v").attr("src", "/img/LiquanGlass_image/used/03.jpg");
+  //   $(".photo").attr("href", "/img/LiquanGlass_image/used/03.jpg");
+  // });
 
   //================== panel area end ==================
 
@@ -372,50 +375,50 @@ $(document).ready(function () {
 
   //================== product List area start==================
                 //商品表單 
-  // $(document).on("click", ".glass", function () {
-  //   $(".video-container").remove();
-  //   $("#panelid").empty(".panel_content");
-  //   $("#panelid").prepend(
-  //     "<h3>商品資訊</h3>",
-  //     "<li>品名 :</li>",
-  //     "<li>編號 :</li>",
-  //     "<li>價格 :</li>",
-  //     "<hr>",
-  //     "<h3>商品介紹</h3>",
-  //     "<li>內容</li>"
-  //   );
+  $(document).on("click", ".glass", function () {
+    // $(".video-container").remove();
+    $("#panelid").empty(".panel_content");
+    $("#panelid").prepend(
+      "<h3>商品資訊</h3>",
+      "<li>品名 :</li>",
+      "<li>編號 :</li>",
+      "<li>價格 :</li>",
+      "<hr>",
+      "<h3>商品介紹</h3>",
+      "<li>內容</li>"
+    );
 
-  //   $(".color_control").attr("type", "");
-  //   $(".p_v").attr(
-  //     "src",
-  //     "/img/LiquanGlass_image/動物造型/利銓-動物造型_200813.jpg"
-  //   );
-  //   $("html, body").animate(
-  //     {
-  //       scrollTop: $(".product_view").offset().top,
-  //     },
-  //     900
-  //   );
-  //   $("#btncontent").click(function () {
-  //     $("#panelid").empty(".panel_content");
-  //     $("#panelid").prepend(
-  //       "<h3>商品資訊</h3>",
-  //       "<li>品名 :</li>",
-  //       "<li>編號 :</li>",
-  //       "<li>價格 :</li>",
-  //       "<hr>",
-  //       "<h3>商品介紹</h3>",
-  //       "<li>內容</li>"
-  //     );
-  //   });
-  //   set_color();
+    $(".color_control").attr("type", "");
+    $(".p_v").attr(
+      "src",
+      "/img/LiquanGlass_image/動物造型/利銓-動物造型_200813.jpg"
+    );
+    $("html, body").animate(
+      {
+        scrollTop: $(".product_view").offset().top,
+      },
+      900
+    );
+    $("#btncontent").click(function () {
+      $("#panelid").empty(".panel_content");
+      $("#panelid").prepend(
+        "<h3>商品資訊</h3>",
+        "<li>品名 :</li>",
+        "<li>編號 :</li>",
+        "<li>價格 :</li>",
+        "<hr>",
+        "<h3>商品介紹</h3>",
+        "<li>內容</li>"
+      );
+    });
+    set_color();
 
-  //   if ($(window).width() < 769) {
-  //     $(".phone_color").empty("#color_wrap");
-  //     $(".phone_color").empty("#pattern_wrap");
-  //     set_color_phone();
-  //   }
-  // });
+    if ($(window).width() < 769) {
+      $(".phone_color").empty("#color_wrap");
+      $(".phone_color").empty("#pattern_wrap");
+      set_color_phone();
+    }
+  });
   // $(document).on("click", ".pattern", function () {
   //   $(".video-container").remove();
   //   $("#panelid").empty(".panel_content");
@@ -551,415 +554,418 @@ $(document).ready(function () {
   //==================================== product List area end =========================
   //==================================== test area ====================================
                   // 針對不同圖片id做出相對應商品內容
-  $(document).on("click", "#pr_1", function () {
-    $(".video-container").remove();
-    $("#panelid").empty(".panel_content");
-    $("#panelid").prepend(
-      "<h3>商品資訊</h3>",
-      "<li>品名 :</li>",
-      "<li>編號 :</li>",
-      "<li>價格 :</li>",
-      "<hr>",
-      "<h3>商品介紹</h3>",
-      "<li>內容</li>"
-    );
-    $(".color_control").attr("type", "");
-    $(".p_v1").attr("src", "/img/LiquanGlass_image/used/01.jpg");
-    $(".p_v").attr("src", "");
-    $("html, body").animate(
-      {
-        scrollTop: $(".product_view").offset().top,
-      },
-      900
-    );
-    $("#btncontent").click(function () {
-      $("#panelid").empty(".panel_content");
-      $("#panelid").prepend(
-        "<h3>商品資訊</h3>",
-        "<li>品名 :</li>",
-        "<li>編號 :</li>",
-        "<li>價格 :</li>",
-        "<hr>",
-        "<h3>商品介紹</h3>",
-        "<li>內容</li>"
-      );
-    });
-    set_color();
+  // $(document).on("click", "#pr_1", function () {
+  //   $(".video-container").remove();
+  //   $("#panelid").empty(".panel_content");
+  //   $("#panelid").prepend(
+  //     "<h3>商品資訊</h3>",
+  //     "<li>品名 :</li>",
+  //     "<li>編號 :</li>",
+  //     "<li>價格 :</li>",
+  //     "<hr>",
+  //     "<h3>商品介紹</h3>",
+  //     "<li>內容</li>"
+  //   );
+  //   $(".color_control").attr("type", "");
+  //   $(".p_v1").attr("src", "/img/LiquanGlass_image/used/01.jpg");
+  //   $(".p_v").attr("src", "");
+  //   $(".photo").attr("href", "/img/LiquanGlass_image/used/01.jpg");
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: $(".product_view").offset().top,
+  //     },
+  //     900
+  //   );
+  //   $("#btncontent").click(function () {
+  //     $("#panelid").empty(".panel_content");
+  //     $("#panelid").prepend(
+  //       "<h3>商品資訊</h3>",
+  //       "<li>品名 :</li>",
+  //       "<li>編號 :</li>",
+  //       "<li>價格 :</li>",
+  //       "<hr>",
+  //       "<h3>商品介紹</h3>",
+  //       "<li>內容</li>"
+  //     );
+  //   });
+  //   set_color();
 
-    if ($(window).width() < 769) {
-      $(".phone_color").empty("#color_wrap");
-      $(".phone_color").empty("#pattern_wrap");
-      set_color_phone();
-    }
-  });
-  $(document).on("click", "#pr_2", function () {
-    $(".video-container").remove();
-    $("#panelid").empty(".panel_content");
-    $("#panelid").prepend(
-      "<h3>商品資訊</h3>",
-      "<li>品名 :</li>",
-      "<li>編號 :</li>",
-      "<li>價格 :</li>",
-      "<hr>",
-      "<h3>商品介紹</h3>",
-      "<li>內容</li>"
-    );
+  //   if ($(window).width() < 769) {
+  //     $(".phone_color").empty("#color_wrap");
+  //     $(".phone_color").empty("#pattern_wrap");
+  //     set_color_phone();
+  //   }
+  // });
+  // $(document).on("click", "#pr_2", function () {
+  //   $(".video-container").remove();
+  //   $("#panelid").empty(".panel_content");
+  //   $("#panelid").prepend(
+  //     "<h3>商品資訊</h3>",
+  //     "<li>品名 :</li>",
+  //     "<li>編號 :</li>",
+  //     "<li>價格 :</li>",
+  //     "<hr>",
+  //     "<h3>商品介紹</h3>",
+  //     "<li>內容</li>"
+  //   );
 
-    $(".color_control").attr("type", "");
-    $(".p_v1").attr("src", "");
-    $(".p_v").attr("src", "/img/LiquanGlass_image/used/02.jpg");
-    $("html, body").animate(
-      {
-        scrollTop: $(".product_view").offset().top,
-      },
-      900
-    );
-    $("#btncontent").click(function () {
-      $("#panelid").empty(".panel_content");
-      $("#panelid").prepend(
-        "<h3>商品資訊</h3>",
-        "<li>品名 :</li>",
-        "<li>編號 :</li>",
-        "<li>價格 :</li>",
-        "<hr>",
-        "<h3>商品介紹</h3>",
-        "<li>內容</li>"
-      );
-    });
-    set_color();
+  //   $(".color_control").attr("type", "");
+  //   $(".p_v1").attr("src", "");
+  //   $(".p_v").attr("src", "/img/LiquanGlass_image/used/02.jpg");
+  //   $(".photo").attr("href", "/img/LiquanGlass_image/used/02.jpg");
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: $(".product_view").offset().top,
+  //     },
+  //     900
+  //   );
+  //   $("#btncontent").click(function () {
+  //     $("#panelid").empty(".panel_content");
+  //     $("#panelid").prepend(
+  //       "<h3>商品資訊</h3>",
+  //       "<li>品名 :</li>",
+  //       "<li>編號 :</li>",
+  //       "<li>價格 :</li>",
+  //       "<hr>",
+  //       "<h3>商品介紹</h3>",
+  //       "<li>內容</li>"
+  //     );
+  //   });
+  //   set_color();
 
-    if ($(window).width() < 769) {
-      $(".phone_color").empty("#color_wrap");
-      $(".phone_color").empty("#pattern_wrap");
-      set_color_phone();
-    }
-  });
-  $(document).on("click", "#pr_3", function () {
-    $(".video-container").remove();
-    $("#panelid").empty(".panel_content");
-    $("#panelid").prepend(
-      "<h3>商品資訊</h3>",
-      "<li>品名 :</li>",
-      "<li>編號 :</li>",
-      "<li>價格 :</li>",
-      "<hr>",
-      "<h3>商品介紹</h3>",
-      "<li>內容</li>"
-    );
-    $(".color_control").attr("type", "");
-    $(".p_v1").attr("src", "");
-    $(".p_v").attr("src", "/img/LiquanGlass_image/used/03.jpg");
-    $("html, body").animate(
-      {
-        scrollTop: $(".product_view").offset().top,
-      },
-      900
-    );
+  //   if ($(window).width() < 769) {
+  //     $(".phone_color").empty("#color_wrap");
+  //     $(".phone_color").empty("#pattern_wrap");
+  //     set_color_phone();
+  //   }
+  // });
+  // $(document).on("click", "#pr_3", function () {
+  //   $(".video-container").remove();
+  //   $("#panelid").empty(".panel_content");
+  //   $("#panelid").prepend(
+  //     "<h3>商品資訊</h3>",
+  //     "<li>品名 :</li>",
+  //     "<li>編號 :</li>",
+  //     "<li>價格 :</li>",
+  //     "<hr>",
+  //     "<h3>商品介紹</h3>",
+  //     "<li>內容</li>"
+  //   );
+  //   $(".color_control").attr("type", "");
+  //   $(".p_v1").attr("src", "");
+  //   $(".p_v").attr("src", "/img/LiquanGlass_image/used/03.jpg");
+  //   $(".photo").attr("href", "/img/LiquanGlass_image/used/03.jpg");
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: $(".product_view").offset().top,
+  //     },
+  //     900
+  //   );
 
-    $("#btncontent").click(function () {
-      $("#panelid").empty(".panel_content");
-      $("#panelid").prepend(
-        "<h3>商品資訊</h3>",
-        "<li>品名 :</li>",
-        "<li>編號 :</li>",
-        "<li>價格 :</li>",
-        "<hr>",
-        "<h3>商品介紹</h3>",
-        "<li>內容</li>"
-      );
-    });
-    set_color();
+  //   $("#btncontent").click(function () {
+  //     $("#panelid").empty(".panel_content");
+  //     $("#panelid").prepend(
+  //       "<h3>商品資訊</h3>",
+  //       "<li>品名 :</li>",
+  //       "<li>編號 :</li>",
+  //       "<li>價格 :</li>",
+  //       "<hr>",
+  //       "<h3>商品介紹</h3>",
+  //       "<li>內容</li>"
+  //     );
+  //   });
+  //   set_color();
 
-    if ($(window).width() < 769) {
-      $(".phone_color").empty("#color_wrap");
-      $(".phone_color").empty("#pattern_wrap");
-      set_color_phone();
-    }
-  });
-  $(document).on("click", "#pr_4", function () {
-    $(".video-container").remove();
-    $("#panelid").empty(".panel_content");
-    $("#panelid").prepend(
-      "<h3>商品資訊</h3>",
-      "<li>品名 :</li>",
-      "<li>編號 :</li>",
-      "<li>價格 :</li>",
-      "<hr>",
-      "<h3>商品介紹</h3>",
-      "<li>內容</li>"
-    );
-    $(".color_control").attr("type", "");
-    $(".p_v").attr("src", "/img/LiquanGlass_image/used/04.jpg");
-    $("html, body").animate(
-      {
-        scrollTop: $(".product_view").offset().top,
-      },
-      900
-    );
-    $("#btncontent").click(function () {
-      $("#panelid").empty(".panel_content");
-      $("#panelid").prepend(
-        "<h3>商品資訊</h3>",
-        "<li>品名 :</li>",
-        "<li>編號 :</li>",
-        "<li>價格 :</li>",
-        "<hr>",
-        "<h3>商品介紹</h3>",
-        "<li>內容</li>"
-      );
-    });
-    set_color();
+  //   if ($(window).width() < 769) {
+  //     $(".phone_color").empty("#color_wrap");
+  //     $(".phone_color").empty("#pattern_wrap");
+  //     set_color_phone();
+  //   }
+  // });
+  // $(document).on("click", "#pr_4", function () {
+  //   $(".video-container").remove();
+  //   $("#panelid").empty(".panel_content");
+  //   $("#panelid").prepend(
+  //     "<h3>商品資訊</h3>",
+  //     "<li>品名 :</li>",
+  //     "<li>編號 :</li>",
+  //     "<li>價格 :</li>",
+  //     "<hr>",
+  //     "<h3>商品介紹</h3>",
+  //     "<li>內容</li>"
+  //   );
+  //   $(".color_control").attr("type", "");
+  //   $(".p_v").attr("src", "/img/LiquanGlass_image/used/04.jpg");
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: $(".product_view").offset().top,
+  //     },
+  //     900
+  //   );
+  //   $("#btncontent").click(function () {
+  //     $("#panelid").empty(".panel_content");
+  //     $("#panelid").prepend(
+  //       "<h3>商品資訊</h3>",
+  //       "<li>品名 :</li>",
+  //       "<li>編號 :</li>",
+  //       "<li>價格 :</li>",
+  //       "<hr>",
+  //       "<h3>商品介紹</h3>",
+  //       "<li>內容</li>"
+  //     );
+  //   });
+  //   set_color();
 
-    if ($(window).width() < 769) {
-      $(".phone_color").empty("#color_wrap");
-      $(".phone_color").empty("#pattern_wrap");
-      set_color_phone();
-    }
-  });
-  $(document).on("click", "#pr_5", function () {
-    $(".video-container").remove();
-    $("#panelid").empty(".panel_content");
-    $("#panelid").prepend(
-      "<h3>商品資訊</h3>",
-      "<li>品名 :</li>",
-      "<li>編號 :</li>",
-      "<li>價格 :</li>",
-      "<hr>",
-      "<h3>商品介紹</h3>",
-      "<li>內容</li>"
-    );
-    $(".color_control").attr("type", "");
-    $(".p_v").attr("src", "/img/LiquanGlass_image/used/05.jpg");
-    $("html, body").animate(
-      {
-        scrollTop: $(".product_view").offset().top,
-      },
-      900
-    );
-    $("#btncontent").click(function () {
-      $("#panelid").empty(".panel_content");
-      $("#panelid").prepend(
-        "<h3>商品資訊</h3>",
-        "<li>品名 :</li>",
-        "<li>編號 :</li>",
-        "<li>價格 :</li>",
-        "<hr>",
-        "<h3>商品介紹</h3>",
-        "<li>內容</li>"
-      );
-    });
-    set_color();
+  //   if ($(window).width() < 769) {
+  //     $(".phone_color").empty("#color_wrap");
+  //     $(".phone_color").empty("#pattern_wrap");
+  //     set_color_phone();
+  //   }
+  // });
+  // $(document).on("click", "#pr_5", function () {
+  //   $(".video-container").remove();
+  //   $("#panelid").empty(".panel_content");
+  //   $("#panelid").prepend(
+  //     "<h3>商品資訊</h3>",
+  //     "<li>品名 :</li>",
+  //     "<li>編號 :</li>",
+  //     "<li>價格 :</li>",
+  //     "<hr>",
+  //     "<h3>商品介紹</h3>",
+  //     "<li>內容</li>"
+  //   );
+  //   $(".color_control").attr("type", "");
+  //   $(".p_v").attr("src", "/img/LiquanGlass_image/used/05.jpg");
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: $(".product_view").offset().top,
+  //     },
+  //     900
+  //   );
+  //   $("#btncontent").click(function () {
+  //     $("#panelid").empty(".panel_content");
+  //     $("#panelid").prepend(
+  //       "<h3>商品資訊</h3>",
+  //       "<li>品名 :</li>",
+  //       "<li>編號 :</li>",
+  //       "<li>價格 :</li>",
+  //       "<hr>",
+  //       "<h3>商品介紹</h3>",
+  //       "<li>內容</li>"
+  //     );
+  //   });
+  //   set_color();
 
-    if ($(window).width() < 769) {
-      $(".phone_color").empty("#color_wrap");
-      $(".phone_color").empty("#pattern_wrap");
-      set_color_phone();
-    }
-  });
-  $(document).on("click", "#pr_6", function () {
-    $(".video-container").remove();
-    $("#panelid").empty(".panel_content");
-    $("#panelid").prepend(
-      "<h3>商品資訊</h3>",
-      "<li>品名 :</li>",
-      "<li>編號 :</li>",
-      "<li>價格 :</li>",
-      "<hr>",
-      "<h3>商品介紹</h3>",
-      "<li>內容</li>"
-    );
+  //   if ($(window).width() < 769) {
+  //     $(".phone_color").empty("#color_wrap");
+  //     $(".phone_color").empty("#pattern_wrap");
+  //     set_color_phone();
+  //   }
+  // });
+  // $(document).on("click", "#pr_6", function () {
+  //   $(".video-container").remove();
+  //   $("#panelid").empty(".panel_content");
+  //   $("#panelid").prepend(
+  //     "<h3>商品資訊</h3>",
+  //     "<li>品名 :</li>",
+  //     "<li>編號 :</li>",
+  //     "<li>價格 :</li>",
+  //     "<hr>",
+  //     "<h3>商品介紹</h3>",
+  //     "<li>內容</li>"
+  //   );
 
-    $(".color_control").attr("type", "");
-    $(".p_v").attr("src", "/img/LiquanGlass_image/used/06.jpg");
-    $("html, body").animate(
-      {
-        scrollTop: $(".product_view").offset().top,
-      },
-      900
-    );
-    $("#btncontent").click(function () {
-      $("#panelid").empty(".panel_content");
-      $("#panelid").prepend(
-        "<h3>商品資訊</h3>",
-        "<li>品名 :</li>",
-        "<li>編號 :</li>",
-        "<li>價格 :</li>",
-        "<hr>",
-        "<h3>商品介紹</h3>",
-        "<li>內容</li>"
-      );
-    });
-    set_color();
+  //   $(".color_control").attr("type", "");
+  //   $(".p_v").attr("src", "/img/LiquanGlass_image/used/06.jpg");
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: $(".product_view").offset().top,
+  //     },
+  //     900
+  //   );
+  //   $("#btncontent").click(function () {
+  //     $("#panelid").empty(".panel_content");
+  //     $("#panelid").prepend(
+  //       "<h3>商品資訊</h3>",
+  //       "<li>品名 :</li>",
+  //       "<li>編號 :</li>",
+  //       "<li>價格 :</li>",
+  //       "<hr>",
+  //       "<h3>商品介紹</h3>",
+  //       "<li>內容</li>"
+  //     );
+  //   });
+  //   set_color();
 
-    if ($(window).width() < 769) {
-      $(".phone_color").empty("#color_wrap");
-      $(".phone_color").empty("#pattern_wrap");
-      set_color_phone();
-    }
-  });
-  $(document).on("click", "#pr_7", function () {
-    $(".video-container").remove();
-    $("#panelid").empty(".panel_content");
-    $("#panelid").prepend(
-      "<h3>商品資訊</h3>",
-      "<li>品名 :</li>",
-      "<li>編號 :</li>",
-      "<li>價格 :</li>",
-      "<hr>",
-      "<h3>商品介紹</h3>",
-      "<li>內容</li>"
-    );
-    $(".color_control").attr("type", "");
-    $(".p_v").attr("src", "/img/LiquanGlass_image/used/07.jpg");
-    $("html, body").animate(
-      {
-        scrollTop: $(".product_view").offset().top,
-      },
-      900
-    );
+  //   if ($(window).width() < 769) {
+  //     $(".phone_color").empty("#color_wrap");
+  //     $(".phone_color").empty("#pattern_wrap");
+  //     set_color_phone();
+  //   }
+  // });
+  // $(document).on("click", "#pr_7", function () {
+  //   $(".video-container").remove();
+  //   $("#panelid").empty(".panel_content");
+  //   $("#panelid").prepend(
+  //     "<h3>商品資訊</h3>",
+  //     "<li>品名 :</li>",
+  //     "<li>編號 :</li>",
+  //     "<li>價格 :</li>",
+  //     "<hr>",
+  //     "<h3>商品介紹</h3>",
+  //     "<li>內容</li>"
+  //   );
+  //   $(".color_control").attr("type", "");
+  //   $(".p_v").attr("src", "/img/LiquanGlass_image/used/07.jpg");
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: $(".product_view").offset().top,
+  //     },
+  //     900
+  //   );
 
-    $("#btncontent").click(function () {
-      $("#panelid").empty(".panel_content");
-      $("#panelid").prepend(
-        "<h3>商品資訊</h3>",
-        "<li>品名 :</li>",
-        "<li>編號 :</li>",
-        "<li>價格 :</li>",
-        "<hr>",
-        "<h3>商品介紹</h3>",
-        "<li>內容</li>"
-      );
-    });
-    set_color();
+  //   $("#btncontent").click(function () {
+  //     $("#panelid").empty(".panel_content");
+  //     $("#panelid").prepend(
+  //       "<h3>商品資訊</h3>",
+  //       "<li>品名 :</li>",
+  //       "<li>編號 :</li>",
+  //       "<li>價格 :</li>",
+  //       "<hr>",
+  //       "<h3>商品介紹</h3>",
+  //       "<li>內容</li>"
+  //     );
+  //   });
+  //   set_color();
 
-    if ($(window).width() < 769) {
-      $(".phone_color").empty("#color_wrap");
-      $(".phone_color").empty("#pattern_wrap");
-      set_color_phone();
-    }
-  });
-  $(document).on("click", "#pr_8", function () {
-    $(".video-container").remove();
-    $("#panelid").empty(".panel_content");
-    $("#panelid").prepend(
-      "<h3>商品資訊</h3>",
-      "<li>品名 :</li>",
-      "<li>編號 :</li>",
-      "<li>價格 :</li>",
-      "<hr>",
-      "<h3>商品介紹</h3>",
-      "<li>內容</li>"
-    );
-    $(".color_control").attr("type", "");
-    $(".p_v").attr("src", "/img/LiquanGlass_image/used/08.jpg");
-    $("html, body").animate(
-      {
-        scrollTop: $(".product_view").offset().top,
-      },
-      900
-    );
-    $("#btncontent").click(function () {
-      $("#panelid").empty(".panel_content");
-      $("#panelid").prepend(
-        "<h3>商品資訊</h3>",
-        "<li>品名 :</li>",
-        "<li>編號 :</li>",
-        "<li>價格 :</li>",
-        "<hr>",
-        "<h3>商品介紹</h3>",
-        "<li>內容</li>"
-      );
-    });
-    set_color();
+  //   if ($(window).width() < 769) {
+  //     $(".phone_color").empty("#color_wrap");
+  //     $(".phone_color").empty("#pattern_wrap");
+  //     set_color_phone();
+  //   }
+  // });
+  // $(document).on("click", "#pr_8", function () {
+  //   $(".video-container").remove();
+  //   $("#panelid").empty(".panel_content");
+  //   $("#panelid").prepend(
+  //     "<h3>商品資訊</h3>",
+  //     "<li>品名 :</li>",
+  //     "<li>編號 :</li>",
+  //     "<li>價格 :</li>",
+  //     "<hr>",
+  //     "<h3>商品介紹</h3>",
+  //     "<li>內容</li>"
+  //   );
+  //   $(".color_control").attr("type", "");
+  //   $(".p_v").attr("src", "/img/LiquanGlass_image/used/08.jpg");
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: $(".product_view").offset().top,
+  //     },
+  //     900
+  //   );
+  //   $("#btncontent").click(function () {
+  //     $("#panelid").empty(".panel_content");
+  //     $("#panelid").prepend(
+  //       "<h3>商品資訊</h3>",
+  //       "<li>品名 :</li>",
+  //       "<li>編號 :</li>",
+  //       "<li>價格 :</li>",
+  //       "<hr>",
+  //       "<h3>商品介紹</h3>",
+  //       "<li>內容</li>"
+  //     );
+  //   });
+  //   set_color();
 
-    if ($(window).width() < 769) {
-      $(".phone_color").empty("#color_wrap");
-      $(".phone_color").empty("#pattern_wrap");
-      set_color_phone();
-    }
-  });
-  $(document).on("click", "#pr_9", function () {
-    $(".video-container").remove();
-    $("#panelid").empty(".panel_content");
-    $("#panelid").prepend(
-      "<h3>商品資訊</h3>",
-      "<li>品名 :</li>",
-      "<li>編號 :</li>",
-      "<li>價格 :</li>",
-      "<hr>",
-      "<h3>商品介紹</h3>",
-      "<li>內容</li>"
-    );
-    $(".color_control").attr("type", "");
-    $(".p_v").attr("src", "/img/LiquanGlass_image/used/09.jpg");
-    $("html, body").animate(
-      {
-        scrollTop: $(".product_view").offset().top,
-      },
-      900
-    );
+  //   if ($(window).width() < 769) {
+  //     $(".phone_color").empty("#color_wrap");
+  //     $(".phone_color").empty("#pattern_wrap");
+  //     set_color_phone();
+  //   }
+  // });
+  // $(document).on("click", "#pr_9", function () {
+  //   $(".video-container").remove();
+  //   $("#panelid").empty(".panel_content");
+  //   $("#panelid").prepend(
+  //     "<h3>商品資訊</h3>",
+  //     "<li>品名 :</li>",
+  //     "<li>編號 :</li>",
+  //     "<li>價格 :</li>",
+  //     "<hr>",
+  //     "<h3>商品介紹</h3>",
+  //     "<li>內容</li>"
+  //   );
+  //   $(".color_control").attr("type", "");
+  //   $(".p_v").attr("src", "/img/LiquanGlass_image/used/09.jpg");
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: $(".product_view").offset().top,
+  //     },
+  //     900
+  //   );
 
-    $("#btncontent").click(function () {
-      $("#panelid").empty(".panel_content");
-      $("#panelid").prepend(
-        "<h3>商品資訊</h3>",
-        "<li>品名 :</li>",
-        "<li>編號 :</li>",
-        "<li>價格 :</li>",
-        "<hr>",
-        "<h3>商品介紹</h3>",
-        "<li>內容</li>"
-      );
-    });
-    set_color();
+  //   $("#btncontent").click(function () {
+  //     $("#panelid").empty(".panel_content");
+  //     $("#panelid").prepend(
+  //       "<h3>商品資訊</h3>",
+  //       "<li>品名 :</li>",
+  //       "<li>編號 :</li>",
+  //       "<li>價格 :</li>",
+  //       "<hr>",
+  //       "<h3>商品介紹</h3>",
+  //       "<li>內容</li>"
+  //     );
+  //   });
+  //   set_color();
 
-    if ($(window).width() < 769) {
-      $(".phone_color").empty("#color_wrap");
-      $(".phone_color").empty("#pattern_wrap");
-      set_color_phone();
-    }
-  });
-  $(document).on("click", "#pr_10", function () {
-    $(".video-container").remove();
-    $("#panelid").empty(".panel_content");
-    $("#panelid").prepend(
-      "<h3>商品資訊</h3>",
-      "<li>品名 :</li>",
-      "<li>編號 :</li>",
-      "<li>價格 :</li>",
-      "<hr>",
-      "<h3>商品介紹</h3>",
-      "<li>內容</li>"
-    );
-    $(".color_control").attr("type", "");
-    $(".p_v").attr("src", "/img/LiquanGlass_image/used/10.jpg");
-    $("html, body").animate(
-      {
-        scrollTop: $(".product_view").offset().top,
-      },
-      900
-    );
-    $("#btncontent").click(function () {
-      $("#panelid").empty(".panel_content");
-      $("#panelid").prepend(
-        "<h3>商品資訊</h3>",
-        "<li>品名 :</li>",
-        "<li>編號 :</li>",
-        "<li>價格 :</li>",
-        "<hr>",
-        "<h3>商品介紹</h3>",
-        "<li>內容</li>"
-      );
-    });
-    set_color();
+  //   if ($(window).width() < 769) {
+  //     $(".phone_color").empty("#color_wrap");
+  //     $(".phone_color").empty("#pattern_wrap");
+  //     set_color_phone();
+  //   }
+  // });
+  // $(document).on("click", "#pr_10", function () {
+  //   $(".video-container").remove();
+  //   $("#panelid").empty(".panel_content");
+  //   $("#panelid").prepend(
+  //     "<h3>商品資訊</h3>",
+  //     "<li>品名 :</li>",
+  //     "<li>編號 :</li>",
+  //     "<li>價格 :</li>",
+  //     "<hr>",
+  //     "<h3>商品介紹</h3>",
+  //     "<li>內容</li>"
+  //   );
+  //   $(".color_control").attr("type", "");
+  //   $(".p_v").attr("src", "/img/LiquanGlass_image/used/10.jpg");
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: $(".product_view").offset().top,
+  //     },
+  //     900
+  //   );
+  //   $("#btncontent").click(function () {
+  //     $("#panelid").empty(".panel_content");
+  //     $("#panelid").prepend(
+  //       "<h3>商品資訊</h3>",
+  //       "<li>品名 :</li>",
+  //       "<li>編號 :</li>",
+  //       "<li>價格 :</li>",
+  //       "<hr>",
+  //       "<h3>商品介紹</h3>",
+  //       "<li>內容</li>"
+  //     );
+  //   });
+  //   set_color();
 
-    if ($(window).width() < 769) {
-      $(".phone_color").empty("#color_wrap");
-      $(".phone_color").empty("#pattern_wrap");
-      set_color_phone();
-    }
-  });
-  //==================================== test area ====================================
+  //   if ($(window).width() < 769) {
+  //     $(".phone_color").empty("#color_wrap");
+  //     $(".phone_color").empty("#pattern_wrap");
+  //     set_color_phone();
+  //   }
+  // });
+  // //==================================== test area ====================================
   //==================================== page start ====================================
   function page() {
     var paginate = {
