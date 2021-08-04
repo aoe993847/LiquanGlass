@@ -102,6 +102,7 @@ hr {
     margin-left: 10%;
     width: 80%;
     height: 190px;
+    
 }
 
 .btn_control {
@@ -114,7 +115,7 @@ hr {
     background-color: black;
     color: white;
     opacity: 0.8px;
-    z-index: 2;
+    z-index: 1;
 }
 .bc-move{
     left:  26%;
@@ -138,7 +139,7 @@ hr {
     padding-top: 30px;
     height: 0;
     overflow: hidden;
-    z-index: 2;
+    z-index: 1;
 }
 /* 螢幕大小 */
 .video-container iframe, .video-container object, .video-container embed {
@@ -161,6 +162,17 @@ hr {
     font-size: 70%;
 }
 
+element.style {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
 
 /* ==================== Hero area end ==================== */
 
@@ -254,6 +266,16 @@ input:focus {
     width: 100%;
     height: 90%;
     cursor: pointer;
+}
+.morebutton1{
+    width: 150px;
+    height: 100px ;
+}
+.morebutton2{
+    margin: 10PX;
+    width: 100px;
+    height: 150px ;
+
 }
 
 /*==================== product List area end==================== */
@@ -509,7 +531,7 @@ input:focus {
         background-color: black;
         color: white;
         opacity: 0.8px;
-        z-index: 5;
+        z-index: 1;
         padding: 0px;
         font-size: 8px;
     }
@@ -728,7 +750,7 @@ input:focus {
         background-color: black;
         color: white;
         opacity: 0.8px;
-        z-index: 4;
+        z-index: 1;
         padding: 0px;
         font-size: 8px;
     }
@@ -896,7 +918,7 @@ input:focus {
         background-color: black;
         color: white;
         opacity: 0.8px;
-        z-index: 4;
+        z-index: 1;
         padding: 0px;
         font-size: 8px;
     }
@@ -1055,7 +1077,7 @@ input:focus {
         background-color: black;
         color: white;
         opacity: 0.8px;
-        z-index: 4;
+        z-index: 1;
         padding: 0px;
         font-size: 10px;
     }
@@ -1174,7 +1196,7 @@ input:focus {
         background-color: black;
         color: white;
         opacity: 0.8px;
-        z-index: 2;
+        z-index: 1;
         padding: 0%;
     }
     .bc-move{
@@ -1279,7 +1301,7 @@ input:focus {
         background-color: black;
         color: white;
         opacity: 0.8px;
-        z-index: 2;
+        z-index: 1;
     }
     .bc-move{
         left: 21%;
@@ -1395,7 +1417,7 @@ input:focus {
         background-color: black;
         color: white;
         opacity: 0.8px;
-        z-index: 2;
+        z-index: 1;
     }
     .bc-move{
         left: 21%;
