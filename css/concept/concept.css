@@ -1584,7 +1584,7 @@ img {
   z-index: 3;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (min-width:1111px)and (max-width: 1350px) {
   .talk {
     width: 400px;
   }
@@ -2209,7 +2209,7 @@ Footer section
 .text-white a {
   color: #fff;
 }
-@media (max-width: 1310px){
+@media (min-width: 769px) and (max-width: 1310px){
 	#past_page{
    margin-top: -60%;
    height:  80%;
@@ -2261,7 +2261,7 @@ Footer section
       font-size: 100px;
      }
 }
-@media (max-width: 768px){
+@media (min-width: 643px) and(max-width: 768px){
 	#past_page{
    margin-top: -59%;
    height:  80%;
@@ -2316,7 +2316,7 @@ Footer section
    }
   
 }
-@media (max-width: 642px){
+@media (min-width: 416px) and(max-width: 642px){
 	#past_page{
    margin-top: -40%;
    height:  80%;
@@ -2375,9 +2375,9 @@ Footer section
    }
   
 }
-@media (max-width: 415px){
+@media (min-width: 376px) and(max-width: 415px){
   #past_page{
-    margin-top: -70%;
+    margin-top: -70px;
     margin-left: -35%;
     width: 70%;
     height:  80%;
@@ -2436,7 +2436,7 @@ Footer section
    
   
 }
-@media (max-width: 375px){
+@media (min-width: 361px) and (max-width: 375px){
 	#past_page{
    margin-top: -85%;
    margin-left: -35%;
@@ -2496,7 +2496,7 @@ Footer section
    }
   
 }
-@media (max-width: 360px){
+@media (min-width: 321px) and(max-width: 360px){
 	#past_page{
    margin-top: -89%;
    margin-left: -41%;
@@ -2558,7 +2558,7 @@ Footer section
    }
   
 }
-@media (max-width: 320px){
+@media (min-width: 301px) and(max-width: 320px){
 	#past_page{
    margin-top: -100%;
    margin-left: -45%;

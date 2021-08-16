@@ -1983,7 +1983,7 @@ $(document).ready(function () {
 
 
 
-$('.list-1').paginate(15);
+$('.list-1').paginate();
 // 隱藏1
 function listBtn() {
   var textlistn = document.getElementById('textlistn');
