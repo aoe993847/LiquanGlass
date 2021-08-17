@@ -1177,7 +1177,7 @@ $(document).ready(function () {
       }
     });
   }
-  if ($(window).width() < 769) {
+  else if ($(window).width() < 769) {
     isclick1 = 2;
     $(".btn_control-1").click(function () {
       if (isclick1 == 2) {
@@ -1298,7 +1298,7 @@ $(document).ready(function () {
   var isclick = 0;
   if ($(window).width() < 500) {
     isclick = 0;
-    $(".btn_control-2").click(function () {
+    $(".bcmore").click(function () {
       if (isclick == 0) {
         $(".btn_control-2").text(">");
         $(".product_sidepanel-2").animate(
@@ -1332,9 +1332,9 @@ $(document).ready(function () {
       }
     });
   }
-  if ($(window).width() < 769) {
+  else if ($(window).width() < 777) {
     isclick = 2;
-    $(".btn_control-2").click(function () {
+    $(".bcmore").click(function () {
       if (isclick == 2) {
         $(".btn_control-2").text(">");
         $(".product_sidepanel-2").animate(
@@ -1345,6 +1345,7 @@ $(document).ready(function () {
         );
         $(".btn_control-2").animate(
           {
+            
             left: "0%",
           },
           530
@@ -1360,7 +1361,7 @@ $(document).ready(function () {
         );
         $(".btn_control-2").animate(
           {
-            left: "21%",
+            width: "hidden",
           },
           550
         );
@@ -1369,7 +1370,7 @@ $(document).ready(function () {
     });
   }
 
-  if ($(window).width() < 1200) {
+  else if ( $(window).width() < 1200) {
     isclick = 4;
     $(".btn_control-2").click(function () {
       if (isclick == 4) {
@@ -1497,7 +1498,7 @@ $(document).ready(function () {
         );
         $(".btn_control-2").animate(
           {
-            width: "hide",
+            left: "0%",
           },
         );
         isclick3 = 3;
@@ -1512,7 +1513,7 @@ $(document).ready(function () {
         );
         $(".btn_control-2").animate(
           {
-            width: "hide",
+            left: "0%",
           },
           
         );
@@ -1611,195 +1612,185 @@ $(document).ready(function () {
     });
   }
    //==================================== DIV縮放 ====================================
-  var isclick3 = 0;
-  if ($(window).width() < 500) {
-    isclick3 = 0;
-    $(".morebutton").click(function () {
-      if (isclick3 == 0) {
-        $(".product_sidepanel-2").animate(
-          
-          {
-            height: "95%",
-            width: "25%",
+   var isclick3 = 0;
+   if ($(window).width() < 500) {
+     isclick3 = 0;
+     $(".morebutton").click(function () {
+       if (isclick3 == 0) {
+         $(".product_sidepanel-2").animate(
            
-          },
-          550
-        );
-        $(".morebutton").animate(
-          {
-            width: "toggle",
-          },
-        );
-        $(".btn_control-2").animate(
-          {
-            width: "toggle",
-          },
-        );
-        isclick3 = 1;
-      } else if (isclick3 == 1) {
-        $(".product_sidepanel-2").animate(
-          
-          {
-            height: "95%",
-            width: "25%",
+           {
+             height: "90%",
+             width: "25%",
+            
+           },
+           550
+         );
+         $(".morebutton").animate(
+           {
+             width: "toggle",
+           },
+         );
+         $(".btn_control-2").animate(
+           {
+             width: "toggle",
+           },
+         );
+         isclick3 = 1;
+       } else if (isclick3 == 1) {
+         $(".product_sidepanel-2").animate(
            
-          },
-          550
-        );
-        $(".btn_control-2").animate(
-          {
-            width: "toggle",
-          },
-          
-        );
-        isclick3 = 0;
-      }
-    });
-  }
-  if ($(window).width() < 769) {
-    isclick3 = 2;
-    $(".morebutton").click(function () {
-      if (isclick3 == 2) {
-        $(".product_sidepanel-2").animate(
-          
-          {
-            height: "95%",
-            width: "25%",
+           {
+             height: "90%",
+             width: "25%",
+            
+           },
+           550
+         );
+         $(".btn_control-2").animate(
+           {
+             width: "toggle",
+           },
            
-          },
-          550
-        );
-        $(".btn_control-2").animate(
-          {
-            width: "toggle",
-          },
-        );
-        isclick3 = 3;
-      } else if (isclick3 == 3) {
-        $(".product_sidepanel-2").animate(
-          
-          {
-            height: "95%",
-            width: "25%",
+         );
+         isclick3 = 0;
+       }
+     });
+   }
+  else if ($(window).width() < 777) {
+     isclick3 = 2;
+     $(".morebutton").click(function () {
+       if (isclick3 == 2) {
+         $(".product_sidepanel-2").animate(
            
-          },
-          550
-        );
+           {
+            width: "toggle",
+            
+           },
+           550
+         );
         
-        $(".btn_control-2").animate(
-          {
+         isclick3 = 3;
+       } else if (isclick3 == 3) {
+         $(".product_sidepanel-2").animate(
+           
+           {
             width: "toggle",
-          },
-          
-        );
-        isclick3 = 2;
-      }
-    });
-  }
-
-  if ($(window).width() < 1200) {
-    isclick3 = 4;
-    $(".morebutton").click(function () {
-      if (isclick3 == 4) {
-        $(".product_sidepanel-2").animate(
-          
-          {
-            height: "95%",
-            width: "25%",
-           
-          },
-          550
-        );
-        $(".btn_control-2").animate(
-          {
-            width: "show",
-          },
-          
-        );
-
-        isclick3 = 5;
-      } else if (isclick3 == 5) {
-        $(".product_sidepanel-2").animate(
-          
-          {
-            height: "95%",
-            width: "25%",
-           
-          },
-          550
-        );
-        $(".btn_control-2").animate(
-          {
-            width: "show",
-          },
-          
-        );
-        isclick3 = 4;
-      }
-    });
-  }
-  if ($(window).width() > 1201) {
-    isclick3 = 6;
-    $(".morebutton2").click(function () {
-      if (isclick3 == 6) {
-        $(".product_sidepanel-2").animate(
-          
-          {
-            height: "95%",
-            width: "25%",
-           
-          },
-          550
-        );
-        $(".morebutton").animate(
-          {
-            width: "show",
-          },
-        );
-        
-        $(".btn_control-2").animate(
-          {
-            width: "show",
-          },
-          
-        );
-       
-        
-        
-
-        isclick3 = 7;
-      } else if (isclick3 == 7) {
-        $(".product_sidepanel-2").animate(
-          {
-            height: "95%",
-            width: "25%",
-           
-          },
-          
-          
-          550
-        );
-        $(".morebutton").animate(
-          {
-            width: "show",
-          },
-        );
-       
-        $(".btn_control-2").animate(
-          {
-            width: "show",
-          },
-          
-        );
-           
+            
+           },
+           550
+         );
          
-       
+         
+         isclick3 = 2;
+       }
+     });
+   }
+   
+  else if ($(window).width() < 1200) {
+     isclick3 = 4;
+     $(".morebutton2").click(function () {
+       if (isclick3 == 4) {
+         $(".product_sidepanel-2").animate(
+           
+           {
+             height: "95%",
+             width: "21%",
+            
+           },
+           550
+         );
+         $(".btn_control-2").animate(
+           {
+             width: "show",
+           },
+           
+         );
+ 
+         isclick3 = 5;
+       } else if (isclick3 == 5) {
+         $(".product_sidepanel-2").animate(
+           
+           {
+             height: "95%",
+             width: "21%",
+            
+           },
+           550
+         );
+         $(".btn_control-2").animate(
+           {
+             width: "show",
+           },
+           
+         );
+         isclick3 = 4;
+       }
+     });
+   }
+   if ($(window).width() > 1201) {
+     isclick3 = 6;
+     $(".morebutton2").click(function () {
+       if (isclick3 == 6) {
+         $(".product_sidepanel-2").animate(
+           
+           {
+             height: "95%",
+             width: "25%",
+            
+           },
+           550
+         );
+         $(".morebutton").animate(
+           {
+             width: "show",
+           },
+         );
+         
+         $(".btn_control-2").animate(
+           {
+             width: "show",
+           },
+           
+         );
         
+         
+         
+ 
+         isclick3 = 7;
+       } else if (isclick3 == 7) {
+         $(".product_sidepanel-2").animate(
+           {
+             height: "95%",
+             width: "25%",
+            
+           },
+           
+           
+           550
+         );
+         $(".morebutton").animate(
+           {
+             width: "show",
+           },
+         );
         
-        isclick3 = 6;
-      }
-    });
-  }
+         $(".btn_control-2").animate(
+           {
+             width: "show",
+           },
+           
+         );
+            
+          
+        
+         
+         
+         isclick3 = 6;
+       }
+     });
+   }
+ 
   // 彈出示螢幕
   var imgObj;
         function checkImg(theURL,winName){
@@ -1983,7 +1974,7 @@ $(document).ready(function () {
 
 
 
-$('.list-1').paginate();
+$('.list-1').paginate(15);
 // 隱藏1
 function listBtn() {
   var textlistn = document.getElementById('textlistn');
