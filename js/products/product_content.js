@@ -1361,7 +1361,7 @@ $(document).ready(function () {
         );
         $(".btn_control-2").animate(
           {
-            width: "hidden",
+            left: "0%",
           },
           550
         );
