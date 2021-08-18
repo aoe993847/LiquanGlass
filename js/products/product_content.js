@@ -1294,12 +1294,14 @@ $(document).ready(function () {
   //     window.location.reload();
   // });
                 // 左邊伸縮按鈕
+  var ggg33 = document.getElementById('ggg33');
 
   var isclick = 0;
   if ($(window).width() < 500) {
     isclick = 0;
     $(".bcmore").click(function () {
       if (isclick == 0) {
+        ggg33.style.visibility = 'visible';
         $(".btn_control-2").text(">");
         $(".product_sidepanel-2").animate(
           {
@@ -1315,6 +1317,8 @@ $(document).ready(function () {
         );
         isclick = 1;
       } else if (isclick == 1) {
+        ggg33.style.visibility = 'hidden';
+
         $(".btn_control-2").text("<");
         $(".product_sidepanel-2").animate(
           {
@@ -1336,6 +1340,7 @@ $(document).ready(function () {
     isclick = 2;
     $(".bcmore").click(function () {
       if (isclick == 2) {
+        ggg33.style.visibility = 'visible';
         $(".btn_control-2").text(">");
         $(".product_sidepanel-2").animate(
           {
@@ -1345,13 +1350,15 @@ $(document).ready(function () {
         );
         $(".btn_control-2").animate(
           {
-            
             left: "0%",
+            
+            
           },
           530
         );
         isclick = 3;
       } else if (isclick == 3) {
+        ggg33.style.visibility = 'hidden';
         $(".btn_control-2").text("<");
         $(".product_sidepanel-2").animate(
           {
@@ -1973,80 +1980,10 @@ $(document).ready(function () {
 })(jQuery);
 
 
+$('.list-1').paginate(10);
 
-$('.list-1').paginate(15);
-// 隱藏1
-function listBtn() {
-  var textlistn = document.getElementById('textlistn');
-  if (textlistn.style.display === 'none') {
-    textlistn.style.display = 'block';
-  textlistn1.style.display = 'none';
-  textlistn2.style.display = 'none';
-  textlistn3.style.display = 'none';
- textlistn4.style.display = 'none';
-   textlistn5.style.display = 'none';
-  } 
-}
-// 隱藏2
-function listBtn1() {
-  var textlistn1 = document.getElementById('textlistn1');
-  if (textlistn1.style.display === 'none') {
-    textlistn1.style.display = 'block';
-    textlistn.style.display = 'none';
-    textlistn2.style.display = 'none';
-    textlistn3.style.display = 'none';
-    textlistn4.style.display = 'none';
-    textlistn5.style.display = 'none';
-  } 
-}
-// 隱藏3
-function listBtn2() {
-  var textlistn2 = document.getElementById('textlistn2');
-  if (textlistn2.style.display === 'none') {
-    textlistn2.style.display = 'block';
-    textlistn.style.display = 'none';
-    textlistn1.style.display = 'none';
-    textlistn3.style.display = 'none';
-    textlistn4.style.display = 'none';
-    textlistn5.style.display = 'none';
-  } 
-}
-// 隱藏4
-function listBtn3() {
-  var textlistn3 = document.getElementById('textlistn3');
-  if (textlistn3.style.display === 'none') {
-    textlistn3.style.display = 'block';
-    textlistn.style.display = 'none';
-    textlistn1.style.display = 'none';
-    textlistn2.style.display = 'none';
-    textlistn4.style.display = 'none';
-    textlistn5.style.display = 'none';
-  } 
-}
-// 隱藏5
-function listBtn4() {
-  var textlistn4 = document.getElementById('textlistn4');
-  if (textlistn4.style.display === 'none') {
-    textlistn4.style.display = 'block';
-    textlistn.style.display = 'none';
-    textlistn1.style.display = 'none';
-    textlistn3.style.display = 'none';
-    textlistn2.style.display = 'none';
-    textlistn5.style.display = 'none';
-  } 
-}
-// 隱藏6
-function listBtn5() {
-  var textlistn5 = document.getElementById('textlistn5');
-  if (textlistn5.style.display === 'none') {
-    textlistn5.style.display = 'block';
-    textlistn.style.display = 'none';
-    textlistn1.style.display = 'none';
-    textlistn2.style.display = 'none';
-    textlistn4.style.display = 'none';
-    textlistn3.style.display = 'none';
-  } 
-}
+
+
 
 
 

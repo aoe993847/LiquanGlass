@@ -415,6 +415,12 @@ input:focus {
 
 
 @media screen and (min-width: 100px) and (max-width: 400px) {
+    .video{
+        margin-left: 5%;
+        border:0; 
+         width: 95%;
+        height:90%;
+    }
     .morebutton2 {
         margin: 10PX;
         width: 40px;
@@ -553,6 +559,7 @@ input:focus {
         font-size: 8px;
     }
     .bc-move{
+        visibility: hidden;
         left: 21%;
         z-index: 3;
     }
@@ -645,6 +652,12 @@ input:focus {
 }
 
 @media screen and (min-width: 401px) and (max-width: 510px) {
+    .video{
+        margin-left: 5%;
+        border:0; 
+         width: 95%;
+        height:90%;
+    }
     .morebutton2 {
         margin: 10PX;
         width: 60px;
@@ -780,6 +793,7 @@ input:focus {
         font-size: 8px;
     }
     .bc-move{
+        visibility: hidden;
         left: 0%;
         z-index: 3;
     }
@@ -838,6 +852,12 @@ input:focus {
 }
 
 @media screen and (min-width: 511px) and (max-width:660px) {
+    .video{
+        margin-left: 5%;
+        border:0; 
+         width: 95%;
+        height:90%;
+    }
     .morebutton2 {
         margin: 10PX;
         width: 70px;
@@ -955,6 +975,7 @@ input:focus {
         font-size: 8px;
     }
     .bc-move{
+        visibility: hidden;
         left: 28%;
         z-index: 3;
     }
@@ -1013,6 +1034,12 @@ input:focus {
 }
 
 @media screen and (min-width:661px) and (max-width: 776px) {
+    .video{
+        margin-left: 5%;
+        border:0; 
+         width: 95%;
+        height:90%;
+    }
     .morebutton{
         visibility: hidden;
     }
@@ -1123,7 +1150,7 @@ input:focus {
     }
    
     .bc-move{
-        
+       visibility: hidden;
         left: 30%;
         z-index: 3;
     }
