@@ -1659,7 +1659,7 @@ img {
     
   }
   #del_page_but:active {
-    top: 50.3%;
+    top: 53%;
   }
   #page_but_left {
     width: 100px;
@@ -1781,6 +1781,7 @@ img {
     font-size: 17px;
   }
   #del_page_but {
+    
     width: 30px;
     height: 30px;
     margin-left: 250px;
@@ -1788,8 +1789,9 @@ img {
     z-index: 4;
   }
   #del_page_but:active {
+    top: 53%;
     margin-left: 250px;
-    margin-top: -305px;
+    margin-top: -300px;
   }
   #page_but_left {
     width: 100px;
@@ -2240,16 +2242,7 @@ Footer section
      }
 }
 @media (max-width: 768px){
-	#past_page{
-   height:  70%;
-  }
-  #now_page{
-   height:  80%;
-  }
-  #future_page{
-   height:  90%;
-
-  }
+	
   .page p {
     font-size: 15px;
   }
